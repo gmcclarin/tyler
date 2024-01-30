@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import * as ReactDOM from "react-dom/client";
 
+import Home from './pages/Home';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,8 +16,12 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
+  {
+    path: "/services",
+    element: <div>HELLO WORLD</div>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
