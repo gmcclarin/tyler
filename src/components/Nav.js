@@ -5,9 +5,9 @@ const Nav = () => {
                 <a href="#" className="text-2xl no-underline text-grey-darkest hover:text-blue-dark">Home</a>
             </div>
             <div>
-                <a href="#" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">One</a>
-                <a href="#" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Two</a>
-                <a href="#" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Three</a>
+                <a href="#" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-5">Services</a>
+                <a href="#" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-5">Contact Us</a>
+                <a href="#" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-5">On the Job</a>
             </div>
         </nav>
     )

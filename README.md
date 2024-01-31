@@ -11,8 +11,7 @@ important features to include:
  - scroll down and shows services
  - contact info at the bottom
  - reservation 
- - likes the scroll beha
- vior on mobile
+ - likes the scroll behavior on mobile
 - likes the reviews carousel idea
 - BLOG PAGE - whats up in the tree world ( maybe hidden )
 - admin  
