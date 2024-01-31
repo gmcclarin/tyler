@@ -4,7 +4,12 @@ const Home = () => {
     return(
         <div>
             <Nav/>
-            LANDING PAGE
+            <div className="w-full ">
+                {/* photo here */}
+            </div>
+            <div>
+                
+            </div>
         </div>
     )
 }
