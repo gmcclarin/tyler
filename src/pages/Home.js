@@ -18,6 +18,18 @@ const Home = () => {
                     <div className="m-10">AH Lorem ipsum etc etc etc blah blah blah contact us HERE immediately right now </div>
                 </div>
             </div>
+            {/* ############ CONTACT FORM #1 #############*/}
+            <div className="flex w-full">
+                {/* LEFT SIDE */}
+                <div className="w-1/2">
+                    <div className="m-10 text-xl">Contact Us</div>
+                    <div className="m-10">Tell people what to reach out about and what to expect after contacting you. Don’t forget to choose a storage option for submissions.</div>
+                </div>
+                {/* RIGHT SIDE & THE FORM */}
+                <div className="w-1/2">
+                    
+                </div>
+            </div>
 
         </div>
     )
