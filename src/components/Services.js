@@ -10,7 +10,7 @@ const Services = () => {
         <div className="flex w-full my-48">
             <div className="w-1/2 mx-10">SERVICES</div>
             <div className="w-1/2 mx-10">
-            
+            {/* SERVICE #1 */}
                    {open1 ? 
                     <div className="w-full flex justify-between border-b-2 border-t-2 py-5 cursor-pointer">
                         <div 
@@ -31,6 +31,43 @@ const Services = () => {
                         <div className="mx-10 text-2xl" >+</div>
                     </div>
                    } 
+                   {/* ##### SERVICE # 2 ######### */}
+
+                   {open2 ? 
+                    <div className="w-full flex justify-between border-b-2 py-5 cursor-pointer">
+                        <div 
+                        className="mx-10 "
+                        onClick={()=>setOpen2(!open2)}>Now offering firewood for campfires, mulching, and more! Contact us today for more information.
+                        </div>
+                        <div className="mx-10 text-2xl" >+</div>
+                    </div> : 
+                    <div 
+                    className="w-full flex justify-between border-b-2 py-5 cursor-pointer" 
+                    onClick={()=>setOpen2(!open2)}>
+                        <div className="mx-10">Firewood & Mulch</div>
+                        <div className="mx-10 text-2xl" >+</div>
+                    </div>
+                   } 
+
+                   {/* ###### SERVICE 3 ############ */}
+
+
+                   {open3 ? 
+                    <div className="w-full flex justify-between border-b-2 py-5 cursor-pointer">
+                        <div 
+                        className="mx-10 "
+                        onClick={()=>setOpen3(!open3)}>Leave your stump grinding and removal to Tyler's expertise. Power lines, in-ground sprinklers, and other obstacles will be professionally assessed before safely grinding your tree stump up to eight inches below the ground.
+                        </div>
+                        <div className="mx-10 text-2xl" >+</div>
+                    </div> :
+                    <div 
+                    className="w-full flex justify-between border-b-2 py-5 cursor-pointer" 
+                    onClick={()=>setOpen3(!open3)}>
+                        <div className="mx-10">Stump Grinding & Removal</div>
+                        <div className="mx-10 text-2xl" >+</div>
+                    </div>
+                   } 
+
                 
             </div>
         </div>
