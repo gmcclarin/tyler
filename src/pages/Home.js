@@ -3,7 +3,9 @@ import hp from "../photos/homeplaceholder.jpg"
 import Services from "../components/Services";
 import Contact from "../components/Contact";
 
+
 const Home = () => {
+
     return(
         <div className="bg-base">
             <Nav/>
