@@ -2,9 +2,9 @@ import Nav from "../components/Nav";
 import hp from "../photos/homeplaceholder.jpg"
 import Services from "../components/Services";
 import Contact from "../components/Contact";
+import Reveal from "../components/Reveal";
 
-
-const Home = () => {
+const Home = ( ) => {
 
     return(
         <div className="bg-base">
@@ -12,9 +12,13 @@ const Home = () => {
             <div className="flex justify-center">
                 <img src={hp} className="max-w-full h-auto m-10 w-full rounded-md mt-20"/>
             </div>
-            <div className="">
-                <Services />
-            </div>
+            {/* testing */}
+            {/* <Reveal>
+                <div className="text-6xl">AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</div>
+            </Reveal> */}
+                <Reveal>
+                    <Services />
+                </Reveal>
             <div className="w-full flex bg-dark">
                 <div className="w-1/2"><img src="https://images.unsplash.com/photo-1569227997603-33b9f12af927?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHRyZWUlMjBidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D"/></div>
                 <div className="w-1/2">

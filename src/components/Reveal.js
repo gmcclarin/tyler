@@ -1,8 +1,9 @@
-import { Children } from "react";
+
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 
+
 const Reveal = ({children}) => {
-    const [isVisible, ref] = useRevealOnScroll({
+    const [ref, isVisible] = useRevealOnScroll({
         root: null,
         rootMargin: "0px",
         threshold:0.1

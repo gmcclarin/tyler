@@ -37,8 +37,8 @@ const Contact = () => {
             >
             {({ isSubmitting }) => (
                 <Form className="max-w-sm mx-auto m-10">
-                    <div class="mb-5">
-                    <label for="firstName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
+                    <div className="mb-5">
+                    <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
                         <Field 
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                         type="firstName" 
@@ -46,8 +46,8 @@ const Contact = () => {
                         id="firstName" />
                         <ErrorMessage name="firstName" component="div" />
                 </div>
-                <div class="mb-5">
-                    <label for="LastName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
+                <div className="mb-5">
+                    <label for="LastName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
                         <Field 
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         type="lastName" 
@@ -55,8 +55,8 @@ const Contact = () => {
                         id="lastName" />
                         <ErrorMessage name="lastName" component="div" />
                 </div>
-                <div class="mb-5">
-                    <label for="phoneNumber" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
+                <div className="mb-5">
+                    <label htmlFor="phoneNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
                         <Field 
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         type="phoneNumber" 
@@ -65,7 +65,7 @@ const Contact = () => {
                         <ErrorMessage name="phoneNumber" component="div" />
                 </div>
                 <div class="mb-5">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                    <label htmlFor="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                         <Field 
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         type="email" 
