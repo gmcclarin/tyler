@@ -18,7 +18,9 @@ const useRevealOnScroll = (options) => {
 
         return () => {
             if(ref.current) {
+                // setIsVisible(false)
                 scrollObserver.unobserve(ref.current)
+                
             }
         }
 

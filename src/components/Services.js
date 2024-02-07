@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Reveal from "./Reveal";
 
 const Services = () => {
     const [open1, setOpen1] = useState(false)
@@ -8,9 +9,15 @@ const Services = () => {
 
     return (
         <div className="flex w-full my-48">
-            <div className="w-1/2 mx-10 text-3xl">SERVICES</div>
+            <div className="w-1/2 mx-10 text-3xl">
+                <Reveal>
+                    <h1>SERVICES</h1>
+                </Reveal>
+                
+                </div>
             <div className="w-1/2 mx-10">
             {/* SERVICE #1 */}
+            <Reveal>
                    {open1 ? 
                     <div className="w-full flex justify-between border-b-2 border-t-2 py-5 cursor-pointer">
                         <div 
@@ -74,8 +81,9 @@ const Services = () => {
                     </div>
                    } 
 
-                
+                </Reveal>
             </div>
+            
         </div>
     )
 };
