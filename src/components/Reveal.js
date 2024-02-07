@@ -10,14 +10,12 @@ const Reveal = ({children}) => {
     });
 
     const classes = `transition-opacity duration-2000 
-    ${isVisible ? "opacity-100" : "opacity-0"}`
+            ${isVisible ? "opacity-100 " : "opacity-0"
+            }`;
 
     return (
         <div ref={ref} className={classes}>{children}</div>
     )
-
-
-
 };
 
-export default Reveal
+export default Reveal;

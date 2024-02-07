@@ -13,10 +13,12 @@ const Home = ( ) => {
                 <img src={hp} className="max-w-full h-auto m-10 w-full rounded-md mt-20"/>
             </div>
             {/* testing */}
-            {/* <Reveal>
+            <Reveal>
                 <div className="text-6xl">AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</div>
-            </Reveal> */}
+                <div className="text-6xl">AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</div>
+            </Reveal>
                 <Reveal>
+                    <div></div>
                     <Services />
                 </Reveal>
             <div className="w-full flex bg-dark">

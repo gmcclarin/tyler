@@ -1,7 +1,5 @@
 import { useRef, useState, useEffect } from "react"
 
-
-
 const useRevealOnScroll = (options) => {
     const ref = useRef(null)
     const [isVisible, setIsVisible] = useState(false)
