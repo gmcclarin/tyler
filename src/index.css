@@ -11,4 +11,12 @@ body {
   background-color: base;
 }
 
+#homebanner {
+  background-image: url('./photos/homeplaceholder.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
 

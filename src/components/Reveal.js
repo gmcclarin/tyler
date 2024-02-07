@@ -9,7 +9,7 @@ const Reveal = ({children}) => {
         threshold:0.1
     });
 
-    const classes = `transition-opacity duration-2000 
+    const classes = `transition-opacity duration-3000 
             ${isVisible ? "opacity-100 " : "opacity-0"
             }`;
 

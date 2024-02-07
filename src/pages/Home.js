@@ -7,20 +7,21 @@ import Reveal from "../components/Reveal";
 const Home = ( ) => {
 
     return(
-        <div className="bg-base">
+        <div className="bg-base relative">
             <Nav/>
-            <div className="flex justify-center">
-                <img src={hp} className="max-w-full h-auto m-10 w-full rounded-md mt-20"/>
+            <div className="snap-y snap-mandatory h-screen w-screen overflow-x-hidden ">
+                
+                <div id="homebanner" className=" bg-neutral-400 w-screen h-screen flex justify-center mx-auto pl-5 items-center">
+                
+                </div>
+                
+                <div className="w-screen h-screen flex justify-center items-center">
+                        <Reveal>
+                            <Services />
+                        </Reveal>  
+                </div>
             </div>
-            {/* testing */}
-            <Reveal>
-                <div className="text-6xl">AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</div>
-                <div className="text-6xl">AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</div>
-            </Reveal>
-                <Reveal>
-                    <div></div>
-                    <Services />
-                </Reveal>
+                
             <div className="w-full flex bg-dark">
                 <div className="w-1/2"><img src="https://images.unsplash.com/photo-1569227997603-33b9f12af927?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHRyZWUlMjBidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D"/></div>
                 <div className="w-1/2">
