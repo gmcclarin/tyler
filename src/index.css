@@ -14,7 +14,7 @@ body {
 #homebanner {
   background-image: url('./photos/homeplaceholder.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:auto;
   background-position: center;
 }
 

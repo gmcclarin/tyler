@@ -9,16 +9,12 @@ const Home = ( ) => {
     return(
         <div className="bg-base relative">
             <Nav/>
-            <div className="snap-y snap-mandatory h-screen w-screen overflow-x-hidden ">
+            <div className=" ">
                 
-                <div id="homebanner" className=" bg-neutral-400 w-screen h-screen flex justify-center mx-auto pl-5 items-center">
-                
-                </div>
+                <div id="homebanner" className=" bg-neutral-400 w-screen h-screen flex justify-center mx-auto pl-5 items-center"></div>
                 
                 <div className="w-screen h-screen flex justify-center items-center">
-                        
-                            <Services />
-                         
+                    <Services />   
                 </div>
             </div>
                 
