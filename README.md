@@ -63,3 +63,8 @@ I NEED:
 
 TO DO
 - scroll hook 
+- better transition for the hook
+- build the footer
+- hook the form up to an email
+- research hosts with the desired open domain
+
