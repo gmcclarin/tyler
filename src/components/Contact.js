@@ -76,8 +76,8 @@ const Contact = () => {
                 <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="rounded-xl bg-gray-100 p-2">
-                    Submit
+                className="rounded-full bg-dark text-white px-3 py-2">
+                    Send
                 </button>
                 </Form>
             )}

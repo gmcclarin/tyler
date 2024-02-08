@@ -3,6 +3,7 @@ import hp from "../photos/homeplaceholder.jpg"
 import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Reveal from "../components/Reveal";
+import Footer from "../components/Footer";
 
 const Home = ( ) => {
 
@@ -23,7 +24,7 @@ const Home = ( ) => {
             <div className="w-full flex bg-dark">
                 <div className="w-1/2"><img src="https://images.unsplash.com/photo-1569227997603-33b9f12af927?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHRyZWUlMjBidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D"/></div>
                 <div className="w-1/2">
-                    <div className="m-10">AH Lorem ipsum etc etc etc blah blah blah contact us HERE immediately right now </div>
+                    <div className="m-10 flex items-centered">AH Lorem ipsum etc etc etc blah blah blah contact us HERE immediately right now </div>
                 </div>
             </div>
             {/* ############ CONTACT FORM #1 #############*/}
@@ -39,6 +40,7 @@ const Home = ( ) => {
                     <Contact />
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
