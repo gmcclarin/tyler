@@ -9,15 +9,11 @@ const Services = () => {
 
     return (
         <div className="flex w-full my-48">
-            <div className="w-1/2 mx-10 text-3xl">
-                <Reveal>
-                    <h1>SERVICES</h1>
-                </Reveal>
-                
+            <div className="w-1/2 mx-10 text-3xl p-10 flex items-center">
+                    <h1>SERVICES</h1> 
                 </div>
-            <div className="w-1/2 mx-10">
+            <div className="w-1/2 mx-10 p-10">
             {/* SERVICE #1 */}
-            <Reveal>
                    {open1 ? 
                     <div className="w-full flex justify-between border-b-2 border-t-2 py-5 cursor-pointer">
                         <div 
@@ -40,8 +36,7 @@ const Services = () => {
                         <div className="mx-10 text-2xl" >+</div>
                     </div>
                    } 
-                   {/* ##### SERVICE # 2 ######### */}
-
+         {/* ##### SERVICE # 2 ######### */}
                    {open2 ? 
                     <div className="w-full flex justify-between border-b-2 py-5 cursor-pointer">
                         <div 
@@ -59,10 +54,7 @@ const Services = () => {
                         <div className="mx-10 text-2xl" >+</div>
                     </div>
                    } 
-
-                   {/* ###### SERVICE 3 ############ */}
-
-
+        {/* ###### SERVICE 3 ############ */}
                    {open3 ? 
                     <div className="w-full flex justify-between border-b-2 py-5 cursor-pointer">
                         <div 
@@ -80,10 +72,7 @@ const Services = () => {
                         <div className="mx-10 text-2xl" >+</div>
                     </div>
                    } 
-
-                </Reveal>
             </div>
-            
         </div>
     )
 };

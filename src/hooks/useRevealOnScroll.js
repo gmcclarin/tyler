@@ -14,14 +14,12 @@ const useRevealOnScroll = (options) => {
         const scrollObserver = new IntersectionObserver(callbackFunction, options);
         if(ref.current) {
             scrollObserver.observe(ref.current)
+            
         }
 
         return () => {
-            if(ref.current) {
-                // setIsVisible(false)
                 scrollObserver.unobserve(ref.current)
-                
-            }
+                scrollObserver.disconnect();
         }
 
     },[])

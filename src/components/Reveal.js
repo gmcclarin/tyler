@@ -5,7 +5,7 @@ import useRevealOnScroll from "../hooks/useRevealOnScroll";
 const Reveal = ({children}) => {
     const [ref, isVisible] = useRevealOnScroll({
         root: null,
-        rootMargin: "0px",
+        rootMargin: "-250px",
         threshold:0.1
     });
 

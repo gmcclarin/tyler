@@ -13,8 +13,10 @@ const Home = ( ) => {
                 
                 <div id="homebanner" className=" bg-neutral-400 w-screen h-screen flex justify-center mx-auto pl-5 items-center"></div>
                 
-                <div className="w-screen h-screen flex justify-center items-center">
-                    <Services />   
+                <div className="w-screen h-screen">
+                    <Reveal className="flex justify-center items-center">
+                        <Services />  
+                    </Reveal> 
                 </div>
             </div>
                 
