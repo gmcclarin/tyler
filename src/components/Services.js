@@ -8,11 +8,11 @@ const Services = () => {
 
 
     return (
-        <div className="flex w-full my-48">
-            <div className="w-1/2 mx-10 text-3xl p-10 flex items-center">
+        <div className="flex w-full h-screen items-center">
+            <div className="w-1/2  text-3xl p-10">
                     <h1>SERVICES</h1> 
                 </div>
-            <div className="w-1/2 mx-10 p-10">
+            <div className="w-1/2 p-10">
             {/* SERVICE #1 */}
                    {open1 ? 
                     <div className="w-full flex justify-between border-b-2 border-t-2 py-5 cursor-pointer">

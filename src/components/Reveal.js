@@ -1,6 +1,4 @@
-
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-
 
 const Reveal = ({children}) => {
     const [ref, isVisible] = useRevealOnScroll({
