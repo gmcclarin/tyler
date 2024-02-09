@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+
 const Footer = () => {
     return (
         <div className="flex justify-between w-full">
@@ -8,11 +12,14 @@ const Footer = () => {
             </div>
 
             <div className="p-10">
-                COLUMN TWO
+            <div>CONNECT</div>
+                <div><FontAwesomeIcon icon={faEnvelope} /></div>
+                <div>Want to talk trees? <a href="#contact">Send Tyler a message</a></div>
             </div>
 
             <div className="p-10">
-                COLUMN THREE
+                <div>COLUMN THREE</div>
+                <div><FontAwesomeIcon icon={faEnvelope} /></div>
             </div>
         </div>
     )

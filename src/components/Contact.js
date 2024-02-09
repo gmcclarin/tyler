@@ -24,7 +24,7 @@ const SignupSchema = Yup.object().shape({
 
 const Contact = () => {
     return (
-        <div>
+        <div id="contact">
             <Formik
             initialValues={initialValues}
             validationSchema={SignupSchema}
