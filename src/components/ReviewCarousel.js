@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 
 const ReviewCarousel = () => {
 
-    const [chosenReview, setChosenReview] = useState(reviews[1])
+   
 
     const reviews = [
         {
@@ -26,11 +26,18 @@ const ReviewCarousel = () => {
         }
     ]
 
+     const [chosenReview, setChosenReview] = useState(reviews[1])
 
 
     return (
-        <div>
-            
+        <div className="w-3/4 p-20 bg-white mx-auto my-20 flex justify-center items-center">
+            <div>
+                <p>tyler is literally the best </p>
+             
+                    <p>- {chosenReview.first} {chosenReview.last}</p>
+    
+              
+            </div>
         </div>
     )
 };
