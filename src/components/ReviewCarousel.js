@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
 const ReviewCarousel = () => {
+
+    const [chosenReview, setChosenReview] = useState(reviews[1])
 
     const reviews = [
         {
@@ -27,7 +30,7 @@ const ReviewCarousel = () => {
 
     return (
         <div>
-            SEND IT
+            
         </div>
     )
 };
