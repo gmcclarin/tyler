@@ -4,6 +4,7 @@ import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Reveal from "../components/Reveal";
 import Footer from "../components/Footer";
+import ReviewCarousel from "../components/ReviewCarousel";
 
 const Home = ( ) => {
 
@@ -31,6 +32,12 @@ const Home = ( ) => {
                     </div>
                 </div>
             </div>
+
+            {/* REVIEW CAROUSEL */}
+
+            <ReviewCarousel />
+         
+
             {/* ############ CONTACT FORM #1 #############*/}
             <div className="flex w-full">
                 {/* LEFT SIDE */}
