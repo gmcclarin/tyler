@@ -9,6 +9,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import OntheJob from './pages/OntheJob';
 
 
 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/services",
     element: <div>HELLO WORLD</div>
+  },
+  {
+    path: "/onthejob",
+    element: <OntheJob />
   },
   {
     path : "/contact",
