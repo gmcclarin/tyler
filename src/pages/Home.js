@@ -13,7 +13,9 @@ const Home = ( ) => {
             <Nav/>
             <div className=" ">
                 
-                <div id="homebanner" className=" bg-neutral-400 w-screen h-screen flex justify-center mx-auto pl-5 items-center"></div>
+                <div id="" className="rounded-lg  w-screen h-screen flex justify-center items-center">
+                    <img src="https://images.unsplash.com/photo-1620852411212-cbd6f3fd8d1c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0dGluZyUyMHRyZWV8ZW58MHx8MHx8fDA%3D" className="rounded-lg" />
+                </div>
                 
                 <div className="w-screen h-screen">
                     <Reveal>

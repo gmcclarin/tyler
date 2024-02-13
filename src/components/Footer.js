@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+// import { faFacebook } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+// import { faStar } from '@fortawesome/free-regular-svg-icons';
 
 
 const Footer = () => {
@@ -13,13 +17,26 @@ const Footer = () => {
 
             <div className="p-10">
             <div>CONNECT</div>
-                <div><FontAwesomeIcon icon={faEnvelope} /></div>
+                <div>
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FontAwesomeIcon icon={faFacebook} />
+                
+                </div>
+
                 <div>Want to talk trees? <a href="#contact">Send Tyler a message</a></div>
             </div>
 
             <div className="p-10">
-                <div>COLUMN THREE</div>
-                <div><FontAwesomeIcon icon={faEnvelope} /></div>
+                <div>5.0</div>
+                
+                <div>
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                </div>
+
             </div>
         </div>
     )
