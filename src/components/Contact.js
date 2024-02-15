@@ -7,7 +7,7 @@ const initialValues = {
     lastName : "",
     phoneNumber : "",
     email : "",
-    description : ""
+    message : ""
 };
 
 const SignupSchema = Yup.object().shape({
@@ -41,7 +41,7 @@ const Contact = () => {
                     <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
                         <Field 
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-                        type="firstName" 
+                        type="text" 
                         name="firstName"
                         id="firstName" />
                         <ErrorMessage name="firstName" component="div" />
@@ -59,7 +59,7 @@ const Contact = () => {
                     <label htmlFor="phoneNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
                         <Field 
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        type="phoneNumber" 
+                        type="text" 
                         name="phoneNumber"
                         id="phoneNumber" />
                         <ErrorMessage name="phoneNumber" component="div" />
@@ -68,10 +68,20 @@ const Contact = () => {
                     <label htmlFor="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                         <Field 
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        type="email" 
+                        type="text" 
                         name="email"
                         id="email" />
                         <ErrorMessage name="email" component="div" />
+                </div>
+                <div class="mb-5">
+                    <label htmlFor="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                        {/* <Field 
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        type="text" 
+                        name="message"
+                        id="message" /> */}
+                        <textarea class="form-textarea mt-1 block w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5" rows="5" placeholder="Have a question? Want to request a service? Tell us about it." ></textarea>
+                        <ErrorMessage name="message" component="div" />
                 </div>
                 <button 
                 type="submit" 
