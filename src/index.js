@@ -5,11 +5,13 @@ import App from './App';
 import * as ReactDOM from "react-dom/client";
 import Home from './pages/Home';
 
+
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import OntheJob from './pages/OntheJob';
+import ServicesPage from './pages/ServicesPage';
 
 
 
@@ -20,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/services",
-    element: <div>HELLO WORLD</div>
+    element: <ServicesPage />
   },
   {
     path: "/onthejob",
