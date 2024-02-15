@@ -43,7 +43,8 @@ const Contact = () => {
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                         type="text" 
                         name="firstName"
-                        id="firstName" />
+                        id="firstName"
+                        placeholder="Willow" />
                         <ErrorMessage name="firstName" component="div" />
                 </div>
                 <div className="mb-5">
@@ -52,7 +53,8 @@ const Contact = () => {
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         type="lastName" 
                         name="lastName"
-                        id="lastName" />
+                        id="lastName"
+                        placeholder="Wood" />
                         <ErrorMessage name="lastName" component="div" />
                 </div>
                 <div className="mb-5">
@@ -61,7 +63,8 @@ const Contact = () => {
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         type="text" 
                         name="phoneNumber"
-                        id="phoneNumber" />
+                        id="phoneNumber"
+                        placeholder="555-555-5555" />
                         <ErrorMessage name="phoneNumber" component="div" />
                 </div>
                 <div class="mb-5">
@@ -70,7 +73,8 @@ const Contact = () => {
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         type="text" 
                         name="email"
-                        id="email" />
+                        id="email"
+                        placeholder="example@gmail.com" />
                         <ErrorMessage name="email" component="div" />
                 </div>
                 <div class="mb-5">
