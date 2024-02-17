@@ -61,10 +61,12 @@ I NEED:
 - photo gallery / temporary photos
 - 
 
-TO DO
-- scroll hook 
-- better transition for the hook
-- build the footer
+TO DO 
+
 - hook the form up to an email
 - research hosts with the desired open domain
+- create new emialJS account with Tyler's email
+- restrict EmailJS domains: Accountn => security => domains
+
+
 
