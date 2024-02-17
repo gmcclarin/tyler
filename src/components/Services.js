@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Reveal from "./Reveal";
 
 const Services = () => {
     const [open1, setOpen1] = useState(false)

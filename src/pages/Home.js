@@ -1,5 +1,4 @@
 import Nav from "../components/Nav";
-import hp from "../photos/homeplaceholder.jpg"
 import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Reveal from "../components/Reveal";
@@ -14,7 +13,7 @@ const Home = ( ) => {
             <div className=" ">
                 
                 <div id="" className="rounded-lg  w-screen h-screen flex justify-center items-center">
-                    <img src="https://images.unsplash.com/photo-1620852411212-cbd6f3fd8d1c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0dGluZyUyMHRyZWV8ZW58MHx8MHx8fDA%3D" className="rounded-lg" />
+                    <img src="https://images.unsplash.com/photo-1620852411212-cbd6f3fd8d1c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0dGluZyUyMHRyZWV8ZW58MHx8MHx8fDA%3D" alt="homepage" className="rounded-lg" />
                 </div>
                 
                 <div className="w-screen h-screen">
@@ -26,7 +25,7 @@ const Home = ( ) => {
                 
             <div className="w-full flex bg-dark">
                 <div className="w-1/2">
-                    <img className="w-full" src="https://images.unsplash.com/photo-1569227997603-33b9f12af927?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHRyZWUlMjBidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D"/>
+                    <img className="w-full" alt="placeholder" src="https://images.unsplash.com/photo-1569227997603-33b9f12af927?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHRyZWUlMjBidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D"/>
                 </div>
                 <div className="w-1/2 m-10 flex justify-center items-centered">
                     <Reveal>

@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import React, { useRef } from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 
 
@@ -27,7 +27,7 @@ const SignupSchema = Yup.object().shape({
   const templateId = process.env.TEMPLATE_ID;
   const pubKey = process.env.PUBLIC_KEY;
 
-  
+  console.log(pubKey)
 
 
 const Contact = () => {
@@ -52,6 +52,8 @@ const Contact = () => {
                 emailjs.send(serviceId, templateId,templateParams, pubKey)
                     .then((response) => {
                         console.log("Email sent Successfully:", response)
+                 }).catch((error) => {
+                    console.error("Error sending email")
                  })
 
                 setTimeout(() => {
@@ -95,23 +97,19 @@ const Contact = () => {
                         <ErrorMessage name="phoneNumber" component="div" />
                 </div>
                 <div class="mb-5">
-                    <label htmlFor="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                    <label htmlFor="fromEmail" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                         <Field 
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         type="text" 
-                        name="email"
-                        id="email"
+                        name="fromEmail"
+                        id="fromEmail"
                         placeholder="example@gmail.com" />
-                        <ErrorMessage name="email" component="div" />
+                        <ErrorMessage name="fromEmail" component="div" />
                 </div>
                 <div class="mb-5">
                     <label htmlFor="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-                        {/* <Field 
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        type="text" 
-                        name="message"
-                        id="message" /> */}
-                        <textarea class="form-textarea mt-1 block w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5" rows="5" placeholder="Have a question? Want to request a service? Tell us about it." ></textarea>
+                    
+                        <textarea class="form-textarea mt-1 block w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5" rows="5" placeholder="Have a question? Want to request a service? Lets talk about it." ></textarea>
                         <ErrorMessage name="message" component="div" />
                 </div>
                 <button 

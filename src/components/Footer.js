@@ -19,7 +19,7 @@ const Footer = () => {
                 <div>Want to talk trees?</div>
                 <div>
                     <a href="mailto:" className="p-1"><FontAwesomeIcon icon={faEnvelope} /></a>
-                    <a href="" className="p-1"><FontAwesomeIcon icon={faFacebook} /></a>
+                    <a href="https//:" className="p-1"><FontAwesomeIcon icon={faFacebook} /></a>
                     <a href="tel:585-555-5555" className="p-1"><FontAwesomeIcon icon={faPhone}/></a>
                 
                 </div>

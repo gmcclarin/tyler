@@ -13,9 +13,9 @@ const OntheJob = () => {
             </div>
             {/* GALLERY HERE - MASON???? */}
             <div className="flex">
-                <img src={p1} />
-                <img src={p2}/>
-                <img src={p3} />
+                <img src={p1} alt="image1" />
+                <img src={p2} alt="image2" />
+                <img src={p3} alt="image3" />
             </div>
         </div>
     )
