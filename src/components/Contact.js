@@ -23,27 +23,13 @@ const SignupSchema = Yup.object().shape({
     description: Yup.string().required("What service would you like?")
   });
 
+  const serviceId = process.env.SERVICE_ID;
+  const templateId = process.env.TEMPLATE_ID;
+  const pubKey = process.env.PUBLIC_KEY;
+
 
 const Contact = () => {
 
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs
-        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-            publicKey: 'YOUR_PUBLIC_KEY',
-          })
-          .then(
-            () => {
-              console.log('SUCCESS!');
-            },
-            (error) => {
-              console.log('FAILED...', error.text);
-            },
-          );
-      };
 
     return (
         <div id="contact">
