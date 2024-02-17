@@ -8,7 +8,7 @@ const initialValues = {
     firstName : "",
     lastName : "",
     phoneNumber : "",
-    email : "",
+    fromEmail : "",
     message : ""
 };
 
@@ -19,13 +19,15 @@ const SignupSchema = Yup.object().shape({
       .required('Required'),
     phoneNumber : Yup.string(),
     // validate the phone number somehow
-    email: Yup.string().email('Invalid email').required('Required'),
-    description: Yup.string().required("What service would you like?")
+    fromEmail: Yup.string().email('Invalid email').required('Required'),
+    message: Yup.string().required("What service would you like?")
   });
 
   const serviceId = process.env.SERVICE_ID;
   const templateId = process.env.TEMPLATE_ID;
   const pubKey = process.env.PUBLIC_KEY;
+
+  
 
 
 const Contact = () => {
@@ -36,11 +38,28 @@ const Contact = () => {
             <Formik
             initialValues={initialValues}
             validationSchema={SignupSchema}
-            onSubmit={(values, { setSubmitting }) => {
+            onSubmit={(values, {resetForm}, { setSubmitting }) => {
+
+                const templateParams = {
+                    from_first: values.firstName,
+                    from_last: values.lastName,
+                    phone: values.phoneNumber,
+                    email: values.fromEmail,
+                    message : values.message
+                  };
+
+
+                emailjs.send(serviceId, templateId,templateParams, pubKey)
+                    .then((response) => {
+                        console.log("Email sent Successfully:", response)
+                 })
+
                 setTimeout(() => {
                 alert(JSON.stringify(values, null, 2));
                 setSubmitting(false);
                 }, 400);
+
+                // resetForm({values : initialValues})
             }}
             >
             {({ isSubmitting }) => (
