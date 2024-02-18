@@ -27,7 +27,8 @@ const SignupSchema = Yup.object().shape({
   const templateId = process.env.TEMPLATE_ID;
   const pubKey = process.env.PUBLIC_KEY;
 
-  console.log(pubKey)
+//   this is undefined....
+//   console.log(pubKey)
 
 
 const Contact = () => {
@@ -38,30 +39,31 @@ const Contact = () => {
             <Formik
             initialValues={initialValues}
             validationSchema={SignupSchema}
-            onSubmit={(values, {resetForm}, { setSubmitting }) => {
+            onSubmit={(values, {resetForm},) => {
 
-                const templateParams = {
-                    from_first: values.firstName,
-                    from_last: values.lastName,
-                    phone: values.phoneNumber,
-                    email: values.fromEmail,
-                    message : values.message
-                  };
+                console.log(values)
+                // const templateParams = {
+                //     from_first: values.firstName,
+                //     from_last: values.lastName,
+                //     phone: values.phoneNumber,
+                //     email: values.fromEmail,
+                //     message : values.message
+                //   };
 
 
-                emailjs.send(serviceId, templateId,templateParams, pubKey)
-                    .then((response) => {
-                        console.log("Email sent Successfully:", response)
-                 }).catch((error) => {
-                    console.error("Error sending email")
-                 })
+                // emailjs.send(serviceId, templateId,templateParams, pubKey)
+                //     .then((response) => {
+                //         console.log("Email sent Successfully:", response)
+                //  }).catch((error) => {
+                //     console.error("Error sending email:", error)
+                //  })
 
-                setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-                setSubmitting(false);
-                }, 400);
+                // ALERT??
+                // setTimeout(() => {
+                // alert(JSON.stringify(values, null, 2));
+                // }, 400);
 
-                // resetForm({values : initialValues})
+                resetForm({values : initialValues})
             }}
             >
             {({ isSubmitting }) => (
@@ -100,7 +102,7 @@ const Contact = () => {
                     <label htmlFor="fromEmail" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                         <Field 
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        type="text" 
+                        type="email" 
                         name="fromEmail"
                         id="fromEmail"
                         placeholder="example@gmail.com" />
@@ -109,6 +111,7 @@ const Contact = () => {
                 <div class="mb-5">
                     <label htmlFor="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
                         <textarea 
+                        type="text"
                         class="form-textarea mt-1 block w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5" 
                         rows="5" 
                         placeholder="Have a question? Want to request a service? Lets talk about it."
@@ -120,7 +123,6 @@ const Contact = () => {
                 </div>
                 <button 
                 type="submit" 
-                disabled={isSubmitting}
                 className="rounded-full bg-dark text-white px-3 py-2">
                     Send
                 </button>
