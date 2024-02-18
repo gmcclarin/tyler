@@ -66,7 +66,7 @@ const Contact = () => {
                 resetForm({values : initialValues})
             }}
             >
-            {({ isSubmitting }) => (
+            {({values, errors, handleChange}) => (
                 <Form className="max-w-sm mx-auto m-10">
                     <div className="mb-5">
                     <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
@@ -112,11 +112,13 @@ const Contact = () => {
                     <label htmlFor="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
                         <textarea 
                         type="text"
-                        class="form-textarea mt-1 block w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5" 
+                        className="form-textarea mt-1 block w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5" 
                         rows="5" 
                         placeholder="Have a question? Want to request a service? Lets talk about it."
                         id="message"
-                        name="message" >
+                        name="message"
+                        values={values.message}
+                        onChange={handleChange} >
                         </textarea>
                         
                         <ErrorMessage name="message" component="div" />
