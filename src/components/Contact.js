@@ -1,7 +1,8 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik} from 'formik';
 import * as Yup from 'yup';
 import React from 'react';
 import emailjs from '@emailjs/browser';
+import axios from 'axios';
 
 
 const initialValues = {
@@ -27,13 +28,12 @@ const SignupSchema = Yup.object().shape({
   const templateId = process.env.TEMPLATE_ID;
   const pubKey = process.env.PUBLIC_KEY;
 
+  console.log(serviceId)
+
 //   this is undefined....
 //   console.log(pubKey)
 
-
 const Contact = () => {
-
-
     return (
         <div id="contact">
             <Formik
@@ -41,15 +41,34 @@ const Contact = () => {
             validationSchema={SignupSchema}
             onSubmit={(values, {resetForm},) => {
 
-                console.log(values)
+                // console.log(values)
                 // const templateParams = {
                 //     from_first: values.firstName,
                 //     from_last: values.lastName,
                 //     phone: values.phoneNumber,
                 //     email: values.fromEmail,
-                //     message : values.message
+                //     message : values.message1
                 //   };
 
+                const data = {
+                    service_id: serviceId,
+                    template_id: templateId,
+                    user_id: pubKey,
+                    template_params: {
+                        from_first: values.firstName,
+                        from_last: values.lastName,
+                        phone: values.phoneNumber,
+                        email: values.fromEmail,
+                        message : values.message1
+                    }
+                  };
+
+                  try {
+                    const res = axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
+                    console.log(res.data);
+                  } catch (error) {
+                    console.error(error);
+                  }
 
                 // emailjs.send(serviceId, templateId,templateParams, pubKey)
                 //     .then((response) => {
@@ -58,10 +77,10 @@ const Contact = () => {
                 //     console.error("Error sending email:", error)
                 //  })
 
-                // ALERT??
-                // setTimeout(() => {
-                // alert(JSON.stringify(values, null, 2));
-                // }, 400);
+
+                setTimeout(() => {
+                alert(("Your was Inquiry sent to Tyler!", null, 2));
+                }, 400);
 
                 resetForm({values : initialValues})
             }}
