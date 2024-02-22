@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
   margin: 0;
   font-family:Arial, Helvetica, sans-serif;
@@ -13,6 +15,13 @@ body {
 
 #homebanner {
   background-image: url('./photos/homeplaceholder.jpg');
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: center;
+}
+
+#notfound {
+  background-image: url('./photos/01.jpeg');
   background-repeat: no-repeat;
   background-size:auto;
   background-position: center;

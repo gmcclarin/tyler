@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
 
+
 const NotFound = () => {
     const navigate = useNavigate();
 
     return(
-        <div className="h-screen flex justify-center items-center">
-            <div className="text-center">
+        <div id="notfound" className="h-screen flex justify-center items-center ">
+            <div className="text-center bg-white p-7 rounded-xl">
                 <div className="">OOPS! There's nothing here!</div>
                 <button
                 onClick={() => navigate(-1)} 
