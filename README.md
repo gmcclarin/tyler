@@ -63,10 +63,10 @@ I NEED:
 
 TO DO 
 
-- hook the form up to an email
 - research hosts with the desired open domain
 - create new emialJS account with Tyler's email
 - restrict EmailJS domains: Accountn => security => domains
+- build a 404 WHOOPS page
 
 
 

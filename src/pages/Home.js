@@ -4,16 +4,35 @@ import Contact from "../components/Contact";
 import Reveal from "../components/Reveal";
 import Footer from "../components/Footer";
 import ReviewCarousel from "../components/ReviewCarousel";
+import pic1 from "../photos/01.jpeg"
+import pic2 from "../photos/02.png"
+import pic3 from "../photos/03.jpeg"
+
 
 const Home = ( ) => {
 
     return(
         <div className="bg-base relative">
             <Nav/>
-            <div className=" ">
+            <div className="">
                 
-                <div id="" className="rounded-lg  w-screen h-screen flex justify-center items-center">
-                    <img src="https://images.unsplash.com/photo-1620852411212-cbd6f3fd8d1c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0dGluZyUyMHRyZWV8ZW58MHx8MHx8fDA%3D" alt="homepage" className="rounded-lg" />
+                <div className="rounded-lg w-screen h-screen flex justify-center items-center">
+
+                    <div className="w-full h-full flex overflow-hidden items-center ">
+                        <img className="min-w-full min-h-full shrink-0 object-cover" src={pic2} />
+                    </div>
+
+                    {/* three pictures ful screen version */}
+                    {/* <div className="w-1/3 h-full overflow-hidden items-center flex justify-end ">
+                        <img className="min-w-full min-h-full shrink-0 object-cover" src={pic1} />
+                    </div>
+                    <div className="w-1/3 h-full overflow-hidden items-center flex justify-end ">
+                        <img className="min-w-full min-h-full shrink-0 object-cover" src={pic2} />
+                    </div>
+                    <div className="w-1/3 h-full overflow-hidden items-center flex justify-end ">
+                        <img className="min-w-full min-h-full shrink-0 object-cover" src={pic3} />
+                    </div> */}
+                    {/* END three fullscreen pictures */}
                 </div>
                 
                 <div className="w-screen h-screen">
@@ -25,7 +44,7 @@ const Home = ( ) => {
                 
             <div className="w-full flex bg-dark">
                 <div className="w-1/2">
-                    <img className="w-full" alt="placeholder" src="https://images.unsplash.com/photo-1569227997603-33b9f12af927?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHRyZWUlMjBidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D"/>
+                    <img className="w-full" alt="placeholder" src={pic1}/>
                 </div>
                 <div className="w-1/2 m-10 flex justify-center items-centered">
                     <Reveal>

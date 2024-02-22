@@ -2,7 +2,6 @@ import { Formik} from 'formik';
 import * as Yup from 'yup';
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
-import axios from 'axios';
 
 
 const initialValues = {
@@ -52,34 +51,6 @@ const Contact = () => {
                     message : values.message1
                   };
 
-                // const data = {
-                //     service_id: serviceId,
-                //     template_id: templateId,
-                //     user_id: pubKey,
-                //     template_params: {
-                //         from_first: values.firstName,
-                //         from_last: values.lastName,
-                //         phone: values.phoneNumber,
-                //         email: values.fromEmail,
-                //         message : values.message1
-                //     }
-                //   };
-
-                //   try {
-                //     fetch("https://api.emailjs.com/api/v1.0/email/send", {
-                //         method: "POST",
-                //         headers:{"Content-Type":"application/json"},
-                //         body: JSON.stringify(data)
-                //     })
-                //     .then(r => {
-                        
-                //        const resp = r.json()
-                //         console.log(resp)
-                //     })
-                //   } catch (error) {
-                //     console.error(error);
-                //   }
-
                 // emailjs.send(serviceId, templateId, templateParams, pubKey)
                 //     .then((response) => {
                 //         console.log("Email sent Successfully:", response)
@@ -87,19 +58,6 @@ const Contact = () => {
                 //     console.error("Error sending email:", error)
                 //  })
 
-                // emailjs
-                // .sendForm(serviceId, templateId, form.current, {
-                //     publicKey: pubKey,
-                // })
-                // .then(
-                //     () => {
-                //     console.log('SUCCESS!');
-                //     },
-                //     (error) => {
-                //     console.log('FAILED...', error.text);
-                //     },
-                // );
-            
 
                 setTimeout(() => {
                 alert(("Your was Inquiry sent to Tyler!"));
