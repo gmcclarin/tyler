@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import OntheJob from './pages/OntheJob';
 import ServicesPage from './pages/ServicesPage';
+import ColorPalette from './pages/ColorPalette';
 
 
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path : "/contact",
     element : <div>CONTACT STUFF</div>
+  },
+  {
+    path: "/colorpalette",
+    element: <ColorPalette />
   }
 ]);
 
