@@ -12,6 +12,7 @@ import {
 import OntheJob from './pages/OntheJob';
 import ServicesPage from './pages/ServicesPage';
 import ColorPalette from './pages/ColorPalette';
+import NotFound from './pages/NotFound';
 
 
 
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
   {
     path: "/colorpalette",
     element: <ColorPalette />
+  },
+
+  {
+    path: "/*",
+    element: <NotFound />
   }
 ]);
 
