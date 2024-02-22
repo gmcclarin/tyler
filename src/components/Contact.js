@@ -44,14 +44,13 @@ const Contact = () => {
             validationSchema={SignupSchema}
             onSubmit={(values, {resetForm},) => {
 
-                // console.log(values)
-                // const templateParams = {
-                //     from_first: values.firstName,
-                //     from_last: values.lastName,
-                //     phone: values.phoneNumber,
-                //     email: values.fromEmail,
-                //     message : values.message1
-                //   };
+                const templateParams = {
+                    from_first: values.firstName,
+                    from_last: values.lastName,
+                    phone: values.phoneNumber,
+                    email: values.fromEmail,
+                    message : values.message1
+                  };
 
                 // const data = {
                 //     service_id: serviceId,
@@ -81,29 +80,29 @@ const Contact = () => {
                 //     console.error(error);
                 //   }
 
-                // emailjs.send(serviceId, templateId,templateParams, pubKey)
+                // emailjs.send(serviceId, templateId, templateParams, pubKey)
                 //     .then((response) => {
                 //         console.log("Email sent Successfully:", response)
                 //  }).catch((error) => {
                 //     console.error("Error sending email:", error)
                 //  })
 
-                emailjs
-                .sendForm(serviceId, templateId, form.current, {
-                    publicKey: pubKey,
-                })
-                .then(
-                    () => {
-                    console.log('SUCCESS!');
-                    },
-                    (error) => {
-                    console.log('FAILED...', error.text);
-                    },
-                );
+                // emailjs
+                // .sendForm(serviceId, templateId, form.current, {
+                //     publicKey: pubKey,
+                // })
+                // .then(
+                //     () => {
+                //     console.log('SUCCESS!');
+                //     },
+                //     (error) => {
+                //     console.log('FAILED...', error.text);
+                //     },
+                // );
             
 
                 setTimeout(() => {
-                alert(("Your was Inquiry sent to Tyler!", null, 2));
+                alert(("Your was Inquiry sent to Tyler!"));
                 }, 400);
 
                 resetForm({values : initialValues})
