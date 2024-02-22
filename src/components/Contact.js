@@ -1,6 +1,6 @@
 import { Formik} from 'formik';
 import * as Yup from 'yup';
-import React from 'react';
+import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import axios from 'axios';
 
@@ -24,9 +24,9 @@ const SignupSchema = Yup.object().shape({
     message1: Yup.string().required("What service would you like?")
   });
 
-  const serviceId = process.env.SERVICE_ID;
-  const templateId = process.env.TEMPLATE_ID;
-  const pubKey = process.env.PUBLIC_KEY;
+  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const templateId = process.env.REACT_APP_TEMPLATE_ID;
+  const pubKey = process.env.REACT_APP_PUBLIC_KEY;
 
   console.log(serviceId)
 
@@ -34,6 +34,9 @@ const SignupSchema = Yup.object().shape({
 //   console.log(pubKey)
 
 const Contact = () => {
+
+    const form = useRef();
+
     return (
         <div id="contact">
             <Formik
@@ -50,25 +53,33 @@ const Contact = () => {
                 //     message : values.message1
                 //   };
 
-                const data = {
-                    service_id: serviceId,
-                    template_id: templateId,
-                    user_id: pubKey,
-                    template_params: {
-                        from_first: values.firstName,
-                        from_last: values.lastName,
-                        phone: values.phoneNumber,
-                        email: values.fromEmail,
-                        message : values.message1
-                    }
-                  };
+                // const data = {
+                //     service_id: serviceId,
+                //     template_id: templateId,
+                //     user_id: pubKey,
+                //     template_params: {
+                //         from_first: values.firstName,
+                //         from_last: values.lastName,
+                //         phone: values.phoneNumber,
+                //         email: values.fromEmail,
+                //         message : values.message1
+                //     }
+                //   };
 
-                  try {
-                    const res = axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
-                    console.log(res.data);
-                  } catch (error) {
-                    console.error(error);
-                  }
+                //   try {
+                //     fetch("https://api.emailjs.com/api/v1.0/email/send", {
+                //         method: "POST",
+                //         headers:{"Content-Type":"application/json"},
+                //         body: JSON.stringify(data)
+                //     })
+                //     .then(r => {
+                        
+                //        const resp = r.json()
+                //         console.log(resp)
+                //     })
+                //   } catch (error) {
+                //     console.error(error);
+                //   }
 
                 // emailjs.send(serviceId, templateId,templateParams, pubKey)
                 //     .then((response) => {
@@ -77,6 +88,19 @@ const Contact = () => {
                 //     console.error("Error sending email:", error)
                 //  })
 
+                emailjs
+                .sendForm(serviceId, templateId, form.current, {
+                    publicKey: pubKey,
+                })
+                .then(
+                    () => {
+                    console.log('SUCCESS!');
+                    },
+                    (error) => {
+                    console.log('FAILED...', error.text);
+                    },
+                );
+            
 
                 setTimeout(() => {
                 alert(("Your was Inquiry sent to Tyler!", null, 2));
@@ -87,6 +111,7 @@ const Contact = () => {
             >
             {({values, errors, handleChange, handleSubmit, touched, handleBlur, isSubmitting}) => (
                 <form onSubmit={handleSubmit}
+                ref={form}
                 className="max-w-sm mx-auto m-10"
                 >
                     <div className="mb-5">
