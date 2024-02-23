@@ -64,9 +64,14 @@ I NEED:
 TO DO 
 
 - research hosts with the desired open domain
-- create new emialJS account with Tyler's email
+- crete EmailJs account connected with Tyler's email 
 - restrict EmailJS domains: Accountn => security => domains
-- build a 404 WHOOPS page
+- LAST: MOBILE DESIGN
 
-
+DONE
+- Sticky Nav Bar
+- Footer 
+- 404 Not Found Page with Button to safety
+- Contact form designed and functioning on EmailJS
+- Reveal on Scroll Effect
 
