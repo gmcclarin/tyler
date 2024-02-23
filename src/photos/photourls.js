@@ -4,4 +4,6 @@
 "https://i.postimg.cc/7Lm6S1cR/IMG-0049.avif"
 "https://i.postimg.cc/nzNQQY9J/IMG-1008.avif"
 "https://i.postimg.cc/4xXHt3ym/IMG-1007.avif"
+"https://i.postimg.cc/HnGVLYFW/IMG-1016.avif"
+"https://i.postimg.cc/VNpN7sf9/IMG-1015.avif"
 
