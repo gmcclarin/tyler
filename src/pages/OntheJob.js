@@ -23,19 +23,19 @@ const OntheJob = () => {
                                 <img
                                 alt="gallery"
                                 className="block h-full w-full object-cover object-center"
-                                src={p01} />
+                                src="https://i.postimg.cc/7Lm6S1cR/IMG-0049.avif" />
                             </div>
                             <div className="w-1/2 p-1 md:p-2">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-contain object-center"
-                                src={p02} />
+                                className="block h-full w-full object-cover object-center"
+                                src="https://i.postimg.cc/59vJVqgM/IMG-0529.avif" />
                             </div>
                             <div className="w-full p-1 md:p-2">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-contain object-center"
-                                src={p03}
+                                className="block h-full w-full object-cover object-center"
+                                src="https://i.postimg.cc/mrwc8Wc8/IMG-1004-preview.avif"
                                 />
                             </div>
                             <div className="w-full p-1 md:p-2">
@@ -51,20 +51,20 @@ const OntheJob = () => {
                                 <img
                                 alt="gallery"
                                 className="block h-full w-full object-cover object-center"
-                                src="https://images.unsplash.com/photo-1613316122132-81de453d8610?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                                src="https://i.postimg.cc/pVgD9xKF/IMG-0428.avif"
                                 />
                             </div>
                             <div className="w-1/2 p-1 md:p-2">
                                 <img
                                 alt="gallery"
                                 className="block h-full w-full object-cover object-center"
-                                src="https://images.unsplash.com/photo-1527630941-4a229fd674ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGFic3RyYWN0JTIwaGFuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" />
+                                src="https://i.postimg.cc/4xXHt3ym/IMG-1007.avif" />
                             </div>
                             <div className="w-1/2 p-1 md:p-2">
                                 <img
                                 alt="gallery"
                                 className="block h-full w-full object-cover object-center"
-                                src="https://images.unsplash.com/photo-1544026230-488aeae72c0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" />
+                                src="https://i.postimg.cc/nzNQQY9J/IMG-1008.avif" />
                             </div>
                             <div className="w-1/2 p-1 md:p-2">
                                 <img
