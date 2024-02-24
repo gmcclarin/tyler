@@ -1,13 +1,11 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import p01 from "../photos/01.jpeg"
-import p02 from "../photos/02.png"
-import p03 from "../photos/03.jpeg"
 
 
 const OntheJob = () => {
 
-    const photos = [p01, p02, p03]
+
 
     return (
         <div>

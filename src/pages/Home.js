@@ -18,8 +18,9 @@ const Home = ( ) => {
                 
                 <div className="rounded-lg w-screen h-screen flex justify-center items-center">
 
-                    <div className="w-full h-full flex overflow-hidden items-center ">
-                        <img className="min-w-full min-h-full shrink-0 object-cover" src={pic2} />
+                    <div id="homeimage" className="w-screen h-screen flex items-center justify-center">
+                        {/* <img className="min-w-full min-h-full shrink-0 object-cover" src={pic2} /> */}
+                        <div className="text-3xl font-extrabold text-white p-1 border-2 border-white rounded-full">LET'S TALK TREES</div>
                     </div>
 
                     {/* three pictures ful screen version */}
