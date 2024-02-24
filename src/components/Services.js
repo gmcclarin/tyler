@@ -55,7 +55,7 @@ const Services = () => {
                    } 
         {/* ###### SERVICE 3 ############ */}
                    {open3 ? 
-                    <div className="w-full flex justify-between border-b-2 py-5 cursor-pointer">
+                    <div className="w-full flex justify-between border-b-2  py-5 cursor-pointer">
                         <div 
                         className="mx-10 "
                         onClick={()=>setOpen3(!open3)}>

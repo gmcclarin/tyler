@@ -62,7 +62,7 @@ I NEED:
 - 
 
 TO DO 
-
+- leave a review, link to google reviews
 - research hosts with the desired open domain
 - crete EmailJs account connected with Tyler's email 
 - restrict EmailJS domains: Accountn => security => domains
