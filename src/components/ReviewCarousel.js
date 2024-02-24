@@ -33,9 +33,9 @@ const ReviewCarousel = () => {
     return (
         <div className="w-2/3 p-20 rounded-xl bg-white mx-auto my-20 flex justify-center items-center">
             <div>
-                <p>tyler is literally the best </p>
+                <p className="font-bold text-2xl">tyler is literally the best </p>
              
-                    <p>- {chosenReview.first} {chosenReview.last}</p>
+                    <p className="italic text-lg ">- {chosenReview.first} {chosenReview.last}</p>
             
             </div>
         </div>
