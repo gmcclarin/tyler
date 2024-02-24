@@ -23,8 +23,6 @@ const Footer = () => {
                     <a href="tel:585-555-5555" className="p-1 hover:text-white"><FontAwesomeIcon icon={faPhone}/></a>
                 
                 </div>
-
-                
             </div>
 
             <div className="p-10">
