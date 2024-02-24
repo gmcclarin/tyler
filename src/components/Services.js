@@ -9,7 +9,7 @@ const Services = () => {
     return (
         <div className="flex w-full h-screen items-center">
             <div className="w-1/2  text-3xl p-10">
-                    <h1>SERVICES</h1> 
+                    <h1 className="font-bold">SERVICES</h1> 
                 </div>
             <div className="w-1/2 p-10">
             {/* SERVICE #1 */}

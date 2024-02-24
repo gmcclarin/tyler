@@ -20,7 +20,9 @@ const Home = ( ) => {
 
                     <div id="homeimage" className="w-screen h-screen flex items-center justify-center">
                         {/* <img className="min-w-full min-h-full shrink-0 object-cover" src={pic2} /> */}
-                        <div className="text-3xl font-extrabold text-white p-1 border-2 border-white rounded-full">LET'S TALK TREES</div>
+                        <div className="text-3xl font-extrabold text-white p-1 border-2 border-white rounded-full hover:text-accent hover:border-accent cursor-pointer">
+                            <a href="#contactform">LET'S TALK TREES</a>
+                        </div>
                     </div>
 
                     {/* three pictures ful screen version */}
@@ -63,15 +65,15 @@ const Home = ( ) => {
          
 
             {/* ############ CONTACT FORM #1 #############*/}
-            <div className="flex w-full">
+            <div id="contactform" className="flex w-full">
                 {/* LEFT SIDE */}
-                <div className="w-1/2">
-                    <div className="m-10 text-xl">Contact Us</div>
+                <div  className="mt-20 w-1/2">
+                    <div className="m-10 text-xl font-bold">CONTACT US</div>
                     <div className="m-10">Tell people what to reach out about and what to expect after contacting you. Don’t forget to choose a storage option for submissions.</div>
                 </div>
 
                 {/* RIGHT SIDE & THE FORM */}
-                <div className="w-1/2">
+                <div  className="w-1/2 mt-20 ">
                     <Contact />
                 </div>
             </div>

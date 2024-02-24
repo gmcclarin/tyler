@@ -31,7 +31,7 @@ const ReviewCarousel = () => {
 
 
     return (
-        <div className="w-3/4 p-20 rounded-lg bg-white mx-auto my-20 flex justify-center items-center">
+        <div className="w-2/3 p-20 rounded-xl bg-white mx-auto my-20 flex justify-center items-center">
             <div>
                 <p>tyler is literally the best </p>
              
