@@ -62,7 +62,7 @@ I NEED:
 - 
 
 TO DO 
-- leave a review, link to google reviews
+
 - research hosts with the desired open domain
 - crete EmailJs account connected with Tyler's email 
 - restrict EmailJS domains: Accountn => security => domains
@@ -74,4 +74,6 @@ DONE
 - 404 Not Found Page with Button to safety
 - Contact form designed and functioning on EmailJS
 - Reveal on Scroll Effect
+- leave a review on google!
+
 

@@ -18,9 +18,9 @@ const Footer = () => {
             <div>CONNECT</div>
                 <div>Want to talk trees?</div>
                 <div>
-                    <a href="mailto:" className="p-1"><FontAwesomeIcon icon={faEnvelope} /></a>
-                    <a href="https//:" className="p-1"><FontAwesomeIcon icon={faFacebook} /></a>
-                    <a href="tel:585-555-5555" className="p-1"><FontAwesomeIcon icon={faPhone}/></a>
+                    <a href="mailto:" className="p-1 hover:text-white"><FontAwesomeIcon icon={faEnvelope} /></a>
+                    <a href="https//:" className="p-1 hover:text-white"><FontAwesomeIcon icon={faFacebook} /></a>
+                    <a href="tel:585-555-5555" className="p-1 hover:text-white"><FontAwesomeIcon icon={faPhone}/></a>
                 
                 </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faStar} />
                     <FontAwesomeIcon icon={faStar} />
                 </div>
-                <div className="font-bold">
+                <div className="font-bold hover:text-white">
                     <a href="https://www.google.com/search?q=tylers+tree+solutions&rlz=1C5CHFA_enUS899US899&oq=tylers&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIMCAAQRRg5GLEDGIAEMgYIARBFGDsyCQgCEAAYChiABDIJCAMQABgKGIAEMgcIBBAAGIAEMgYIBRBFGD0yBggGEEUYPDIGCAcQRRg80gEIMzc0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x89d153a2289fe4e9:0xb8b8532813616cc2,3,,,," 
                         target="_blank">
                         GREAT EXPERIENCE? LEAVE A REVIEW</a>
