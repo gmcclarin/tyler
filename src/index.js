@@ -13,6 +13,7 @@ import OntheJob from './pages/OntheJob';
 import ServicesPage from './pages/ServicesPage';
 import ColorPalette from './pages/ColorPalette';
 import NotFound from './pages/NotFound';
+import About from './pages/About';
 
 
 
@@ -30,8 +31,8 @@ const router = createBrowserRouter([
     element: <OntheJob />
   },
   {
-    path : "/contact",
-    element : <div>CONTACT STUFF</div>
+    path : "/about",
+    element : <About />
   },
   {
     path: "/colorpalette",
