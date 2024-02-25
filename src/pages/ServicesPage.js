@@ -5,6 +5,16 @@ const ServicesPage = () => {
     return (
         <div>
             <Nav />
+
+            <div className="flex min-w-screen min-h-screen items-center justify-between">
+                <div className="flex w-full justify-center">
+                    <div className="font-bold text-2xl p-10 text-olive hover:text-dark cursor-pointer">TRIMMING</div>
+                    <div className="font-bold text-2xl p-10">STUMP REMOVAL</div>
+                    <div className="font-bold text-2xl p-10">MULCHING</div>
+                    <div className="font-bold text-2xl p-10">THE FULL SITUATION</div>
+                </div>
+            </div>
+
             <div className="flex min-w-screen min-h-screen items-center justify-center">
                 <div className="flex justify-center w-1/2 p-10">
                     <img src="https://i.postimg.cc/Sx5ZcK56/IMG-1011.avif" />
