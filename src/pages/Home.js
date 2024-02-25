@@ -7,6 +7,7 @@ import ReviewCarousel from "../components/ReviewCarousel";
 import pic1 from "../photos/01.jpeg"
 import pic2 from "../photos/02.png"
 import pic3 from "../photos/03.jpeg"
+import ServicesMarquee from "../components/ServicesMarquee";
 
 
 const Home = ( ) => {
@@ -38,9 +39,10 @@ const Home = ( ) => {
                     {/* END three fullscreen pictures */}
                 </div>
                 
-                <div className="w-screen h-screen">
+                <div className="w-screen h-screen flex items-center">
                     <Reveal>
-                        <Services />  
+                        <ServicesMarquee /> 
+                        <button>OUR SERVICES</button> 
                     </Reveal> 
                 </div>
             </div>

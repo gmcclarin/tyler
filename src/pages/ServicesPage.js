@@ -9,7 +9,7 @@ const ServicesPage = () => {
             <Nav />
            
             <div className="flex min-w-screen min-h-screen items-center justify-between">
-                <ServicesMarquee />
+                {/* <ServicesMarquee /> */}
                 {/* <div className="flex w-full justify-center my-20">
                     <div className="font-bold text-2xl p-10 text-olive hover:text-dark cursor-pointer"><a href="#trimmingservice">TRIMMING</a></div>
                     <div className="font-bold text-2xl p-10 text-olive hover:text-dark  cursor-pointer">STUMP REMOVAL</div>
