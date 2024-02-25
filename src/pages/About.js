@@ -5,9 +5,14 @@ const About  = () => {
     return (
         <div>
             <Nav />
-            <div className="">
-                <div className="font-bold text-3xl">ABOUT</div>
+            <div className="flex w-screen justify-between">
+                <div className="m-20 p-10">
+                    <div className="font-bold text-3xl -rotate-90 ">ABOUT</div>
+                    <div>
+                        <p>Lorem ipsum about tyler and it all started with an axe and a </p>
 
+                    </div>
+                </div>
             </div>
             <Footer />
 
