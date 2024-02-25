@@ -9,9 +9,9 @@ const ServicesPage = () => {
             <div className="flex min-w-screen min-h-screen items-center justify-between">
                 <div className="flex w-full justify-center">
                     <div className="font-bold text-2xl p-10 text-olive hover:text-dark cursor-pointer">TRIMMING</div>
-                    <div className="font-bold text-2xl p-10">STUMP REMOVAL</div>
-                    <div className="font-bold text-2xl p-10">MULCHING</div>
-                    <div className="font-bold text-2xl p-10">THE FULL SITUATION</div>
+                    <div className="font-bold text-2xl p-10 text-olive hover:text-dark ">STUMP REMOVAL</div>
+                    <div className="font-bold text-2xl p-10 text-olive hover:text-dark ">MULCHING</div>
+                    <div className="font-bold text-2xl p-10 text-olive hover:text-dark ">THE FULL SITUATION</div>
                 </div>
             </div>
 
