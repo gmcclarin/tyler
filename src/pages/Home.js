@@ -53,7 +53,7 @@ const Home = ( ) => {
                 
             <div className="w-full flex bg-dark">
                 <div className="w-1/2">
-                    <img className="w-full" alt="placeholder" src={pic1}/>
+                    <img className="object-cover" alt="placeholder" src={pic1}/>
                 </div>
                 <div className="w-1/2 m-10 flex justify-center items-center">
                     <Reveal>
@@ -66,7 +66,7 @@ const Home = ( ) => {
             </div>
 
             {/* REVIEW CAROUSEL */}
-
+            
             <ReviewCarousel />
          
 

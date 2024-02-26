@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Reveal from './Reveal';
 
 const ReviewCarousel = () => {
 
@@ -31,13 +32,18 @@ const ReviewCarousel = () => {
 
 
     return (
-        <div className="w-2/3 p-20 rounded-xl bg-white mx-auto my-20 flex justify-center items-center">
-            <div>
-                <p className="font-bold text-2xl">tyler is literally the best </p>
-             
-                    <p className="italic text-lg ">- {chosenReview.first} {chosenReview.last}</p>
+        <div className="w-screen h-screen flex items-center justify-center bg-darker">
             
-            </div>
+                <div className="text-white text-4xl -rotate-90 border-b p-6" >REVIEWS</div>
+                <div className="p-20 rounded-xl  flex justify-center items-center">
+                    <Reveal>
+                        <div>
+                            <p className="font-bold text-white text-2xl">tyler is literally the best </p>
+                            <p className="italic text-lg text-white">- {chosenReview.first} {chosenReview.last}</p>
+                        </div>
+                    </Reveal>
+                </div>
+   
         </div>
     )
 };
