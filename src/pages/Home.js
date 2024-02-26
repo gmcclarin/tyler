@@ -9,11 +9,10 @@ import pic2 from "../photos/02.png"
 import pic3 from "../photos/03.jpeg"
 import ServicesMarquee from "../components/ServicesMarquee";
 
-
 const Home = ( ) => {
 
     return(
-        <div className="bg-base relative">
+        <div className="bg-base relative overflow-x-hidden">
             <Nav/>
             <div className="">
                 
@@ -39,12 +38,17 @@ const Home = ( ) => {
                     {/* END three fullscreen pictures */}
                 </div>
                 
-                <div className="w-screen h-screen flex items-center">
-                    <Reveal>
-                        <ServicesMarquee /> 
-                        <button>OUR SERVICES</button> 
-                    </Reveal> 
+                <div className="w-screen h-screen flex items-center justify-center">
+                    <div className="">
+                        <ServicesMarquee />
+                        <div className="flex justify-center">
+                            <a 
+                            href="/services"
+                            className="px-5 p-3 hover:bg-dark bg-olive text-white font-bold rounded-full">ALL SERVICES</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
                 
             <div className="w-full flex bg-dark">
