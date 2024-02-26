@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Reveal from './Reveal';
 
 const ReviewCarousel = () => {
@@ -8,7 +8,7 @@ const ReviewCarousel = () => {
     const reviews = [
         {
             id : 1,
-            r : "tyler was so professional, he really cut that tree down and lorem ipsum and such",
+            r : "tyler was so professional, he really cut that tree down",
             first :  "Jacquelyn",
             last : "D"
         },
@@ -20,7 +20,7 @@ const ReviewCarousel = () => {
         },
         {
             id : 3,
-            r : "nothing gold can stay.",
+            r : "Tyler removed the stumps in my yard as part of a landscaping project and I loved his work",
             first : "Robert",
             last : "Frost"
         }
@@ -28,20 +28,32 @@ const ReviewCarousel = () => {
 
      const [chosenReview, setChosenReview] = useState(reviews[1])
 
+    
 
+     useEffect(() => {
+        const randomElement = reviews[Math.floor(Math.random() * reviews.length)];
+        const interval = setInterval(() => {
+            setChosenReview(randomElement);
+          }, 5000);
+       return () => {
+         clearInterval(interval);
+       };
+     }, []);
 
 
     return (
         <div className="w-screen h-screen flex items-center justify-center bg-darker">
             
-                <div className="text-white text-4xl -rotate-90 border-b p-6" >REVIEWS</div>
-                <div className="p-20 rounded-xl  flex justify-center items-center">
-                    <Reveal>
-                        <div>
-                            <p className="font-bold text-white text-2xl">tyler is literally the best </p>
+                <div className="text-white text-4xl -rotate-90 border-b p-6" >CUSTOMER REVIEWS</div>
+                <div className="w-1/2 flex justify-center items-center">
+                  
+                        <div className="text-6xl px-16 text-dark">«</div>
+                        <div className="">
+                            <p className="font-bold text-white text-2xl">{chosenReview.r}</p>
                             <p className="italic text-lg text-white">- {chosenReview.first} {chosenReview.last}</p>
                         </div>
-                    </Reveal>
+                        <div className="text-6xl px-16 text-dark">»</div>
+                    
                 </div>
    
         </div>
