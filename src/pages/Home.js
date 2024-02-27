@@ -74,7 +74,7 @@ const Home = ( ) => {
             <div id="contactform" className="flex w-full">
                 {/* LEFT SIDE */}
                 <div  className="mt-20 w-1/2">
-                    <div className="m-10 text-xl font-bold">CONTACT US</div>
+                    <div className="m-10 text-xl font-bold">CONTACT</div>
                     <div className="m-10">Tell people what to reach out about and what to expect after contacting you. Don’t forget to choose a storage option for submissions.</div>
                 </div>
 

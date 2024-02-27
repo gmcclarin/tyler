@@ -58,15 +58,15 @@ tylerstreesolutions.com
 
 
 I NEED:
-- photo gallery / temporary photos
-- 
+
 
 TO DO 
-
+- add a section scroll horizontal for before & after make a placeholder 
 - research hosts with the desired open domain
-- crete EmailJs account connected with Tyler's email 
-- restrict EmailJS domains: Accountn => security => domains
+- create EmailJs account connected with Tyler's email 
+- restrict EmailJS domains: Account => security => domains
 - LAST: MOBILE DESIGN
+- deploy the site, and distribute the link
 
 DONE
 - Sticky Nav Bar
