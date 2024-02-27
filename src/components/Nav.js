@@ -1,6 +1,6 @@
 const Nav = () => {
     return (
-        <nav className="fixed top-0 font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-accent shadow sm:items-baseline w-full">
+        <nav className="fixed z-50 top-0 font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-accent shadow sm:items-baseline w-full">
             <div className="mb-2 sm:mb-0">
                 <a href="/" className="text-2xl font-bold no-underline text-darker hover:text-dark">TYLER'S TREE SOLUTIONS</a>
             </div>
