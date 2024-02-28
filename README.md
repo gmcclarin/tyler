@@ -68,7 +68,7 @@ TO DO
 - LAST: MOBILE DESIGN
 - deploy the site, and distribute the link
 - REviews
-_add another link in review section to write a review on google 
+- add another link in review section to write a review on google 
 
 DONE
 - Sticky Nav Bar

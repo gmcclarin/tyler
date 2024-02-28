@@ -8,6 +8,7 @@ import pic1 from "../photos/01.jpeg"
 import pic2 from "../photos/02.png"
 import pic3 from "../photos/03.jpeg"
 import ServicesMarquee from "../components/ServicesMarquee";
+import BeforeAfter from "../components/BeforeAfter";
 
 const Home = ( ) => {
 
@@ -50,6 +51,8 @@ const Home = ( ) => {
                 </div>
 
             </div>
+            
+            <BeforeAfter />
                 
             <div className="w-full flex bg-dark">
                 <div className="w-1/2">
