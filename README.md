@@ -1,8 +1,13 @@
-# Buisiness Skeleton Site for Tyler 
+# Tyler's Tree Solutions 
+
+## About the Project
+ This Tree Solutions project is a business web app that will increase this client's presence online and grow their business. The project prioritizes user-experience and ease of use. The app was designed as a front-end ONLY project to reduce long-term maintenance costs for the client, which presented challenges addressed below. Expected Delpoyment Date: March 15th, 2024
+
+
 
 important features to include:
 - mobile design is important 
-- On the Job action - photos of jobs in the tree
+
 - inquiries
 - image optimization plugin
 - woodeez tree service
@@ -18,28 +23,8 @@ important features to include:
 - payments accepted
 
 
-
-- upload pictures in the contact form??
-- certified arborist badge - JM TREE arborist badge, 5 stars, text about google business, 
-- call us for a free estimate => link to the contact form
-
-
-timber top 
-=> hate their font
-
-
 - business email = > tylerstreesolutions@gmail.com  
 - 
-
-
-INSPO 
-https://timbertoptree.com/
-https://www.jmtree.com/?gclid=CjwKCAiAtt2tBhBDEiwALZuhAB6JJG-Fy_UlNKRrFUeUOd4xj5FWWqntJcuHQoRF7Se52yIvqu6jvhoCtssQAvD_BwE
-
-
-https://www.woodeeztreeservice.com/
-
-https://www.birchcrestlandscape.com/
 
 
 * FUTURE features
@@ -55,9 +40,6 @@ https://www.birchcrestlandscape.com/
 
 
 tylerstreesolutions.com
-
-
-I NEED:
 
 
 TO DO 
