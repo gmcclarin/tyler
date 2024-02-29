@@ -2,10 +2,12 @@ import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import Reveal from "../components/Reveal"
 import ServicesMarquee from "../components/ServicesMarquee";
+import MobileNav from "../components/MobileNav";
 
 const ServicesPage = () => {
     return (
         <div>
+            <MobileNav />
             <Nav />
            
             <div className="flex min-w-screen min-h-screen items-center justify-between bg-base text-darker">

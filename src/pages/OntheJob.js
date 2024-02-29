@@ -1,6 +1,7 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import p01 from "../photos/01.jpeg"
+import MobileNav from "../components/MobileNav";
 
 
 const OntheJob = () => {
@@ -9,7 +10,9 @@ const OntheJob = () => {
 
     return (
         <div>
+            <MobileNav />
             <Nav />
+            
             {/* GALLERY HERE - MASON???? */}
             <div className="p-1 sm:p-2 pt-10 min-h-screen">
             <div className="flex">

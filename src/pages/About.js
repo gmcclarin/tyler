@@ -1,9 +1,11 @@
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
+import MobileNav from "../components/MobileNav";
 
 const About  = () => {
     return (
         <div>
+            <MobileNav />
             <Nav />
             <div className="flex w-screen justify-between">
                 <div className="m-20 p-10 flex justify-between">
