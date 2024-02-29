@@ -10,9 +10,9 @@ export default function MobileNav () {
                 <div className="flex">
                     
                     <div onClick={()=> setShowMenu(!showMenu)}  className="sm:hidden fixed top-3 left-3 p-1 space-y-1 z-10">
-                        <div className="w-6 h-0.5 bg-zinc-800"></div>
-                        <div className="w-6 h-0.5 bg-zinc-800"></div>
-                        <div className="w-6 h-0.5 bg-zinc-800"></div>
+                        <div className="w-8 h-1 bg-accent"></div>
+                        <div className="w-8 h-1 bg-accent"></div>
+                        <div className="w-8 h-1 bg-accent"></div>
                     </div>
 
                     {/* ------------- FOR MOBILE ---------------- */}
@@ -30,6 +30,16 @@ export default function MobileNav () {
                         </li>
                         <li>
                             <a
+                            href="/services"
+                        
+                            className="hover:text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
+                            onClick={()=> setShowMenu(!showMenu)}
+                            >
+                                SERVICES
+                            </a>
+                        </li>
+                        <li>
+                            <a
                             href="/about"
                             
                             className="hover:text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
@@ -38,24 +48,15 @@ export default function MobileNav () {
                                 ABOUT
                             </a>
                         </li>
-                        <li>
-                            <a
-                            href="/portfolio"
                         
-                            className="hover:text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
-                            onClick={()=> setShowMenu(!showMenu)}
-                            >
-                                WORK
-                            </a>
-                        </li>
                         <li>
                             <a
-                            href="/contact"
+                            href="/onthejob"
                             
                             className="hover:text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
                             onClick={()=> setShowMenu(!showMenu)}
                             >
-                                CONTACT
+                                ON THE JOB
                             </a>
                         </li>
                     </ul>

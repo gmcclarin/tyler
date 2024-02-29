@@ -9,12 +9,14 @@ import pic2 from "../photos/02.png"
 import pic3 from "../photos/03.jpeg"
 import ServicesMarquee from "../components/ServicesMarquee";
 import BeforeAfter from "../components/BeforeAfter";
+import MobileNav from "../components/MobileNav";
 
 const Home = ( ) => {
 
     return(
         <div className="bg-base relative overflow-x-hidden">
             <Nav/>
+            <MobileNav />
             <div className="">
                 
                 <div className="rounded-lg w-screen h-screen flex justify-center items-center">
