@@ -7,14 +7,14 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     return (
-        <div className="flex justify-between w-full text-darker">
-            <div className="p-10">
+        <div className="sm:flex justify-between w-full text-darker font-bold">
+            <div className="p-5 sm:p-10">
                 <div>CONTACT</div>
                 <div>tylerstreesolutions@gmail.com</div>
                 <div>(585) 555 - 5555 </div>
             </div>
 
-            <div className="p-10">
+            <div className="p-5 sm:p-10">
             <div>CONNECT</div>
                 <div>Want to talk trees?</div>
                 <div>
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="p-10">
+            <div className="p-5 sm:p-10">
                 <div>5.0</div>
                 
                 <div>
