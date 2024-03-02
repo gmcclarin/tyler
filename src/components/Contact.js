@@ -37,7 +37,7 @@ const Contact = () => {
     const form = useRef();
 
     return (
-        <div id="contact">
+        <div id="contact" className="m-5 sm:m-0">
             <Formik
             initialValues={initialValues}
             validationSchema={SignupSchema}
