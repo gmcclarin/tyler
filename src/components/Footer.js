@@ -37,7 +37,8 @@ const Footer = () => {
                 </div>
                 <div className="font-bold hover:text-dark">
                     <a href="https://www.google.com/search?q=tylers+tree+solutions&rlz=1C5CHFA_enUS899US899&oq=tylers&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIMCAAQRRg5GLEDGIAEMgYIARBFGDsyCQgCEAAYChiABDIJCAMQABgKGIAEMgcIBBAAGIAEMgYIBRBFGD0yBggGEEUYPDIGCAcQRRg80gEIMzc0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x89d153a2289fe4e9:0xb8b8532813616cc2,3,,,," 
-                        target="_blank">
+                        target="_blank"
+                        rel="noopener">
                         GREAT EXPERIENCE? LEAVE A REVIEW</a>
                 </div>
 
