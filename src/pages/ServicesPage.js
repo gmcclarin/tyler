@@ -10,7 +10,7 @@ const ServicesPage = () => {
             <MobileNav />
             <Nav />
            
-            <div className="py-24 sm:py-32 p-10 grid grid-cols-3 gap-8  bg-base text-darker">
+            <div className="py-24 sm:py-32 p-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8  bg-base text-darker">
 
                 <div className="grid grid-rows-3 items-center">
                     <div className="text-4xl font-bold">TREE & BUSH REMOVAL</div>
