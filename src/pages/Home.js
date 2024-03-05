@@ -56,7 +56,7 @@ const Home = ( ) => {
             
             <BeforeAfter />
                 
-            <div className="w-full sm:flex bg-dark">
+            <div className="w-full sm:flex bg-base">
                 <div className="w-full sm:w-1/2">
                     <img className="object-cover" alt="placeholder" src={pic1}/>
                 </div>

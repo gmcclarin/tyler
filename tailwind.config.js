@@ -10,10 +10,10 @@ module.exports = {
       },
       colors : {
         // black
-        "olive": "#253300",
-        "darker" : "#352D28",
-        "dark" : "#9C8B7E",
-        "base" : "#D5D2CD",
+        "olive": "#B6C4B6",
+        "darker" : "#1e3118",
+        "dark" : "#578E44",
+        "base" : "#EEF0E5",
         "accent" :"#cc6600"
         // white : 
 
