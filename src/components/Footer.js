@@ -11,16 +11,16 @@ const Footer = () => {
             <div className="p-5 sm:p-10">
                 <div>CONTACT</div>
                 <div>tylerstreesolutions@gmail.com</div>
-                <div>(585) 555 - 5555 </div>
+                <div>(585) 802 - 9632 </div>
             </div>
 
             <div className="p-5 sm:p-10">
             <div>CONNECT</div>
                 <div>Want to talk trees?</div>
                 <div>
-                    <a href="mailto:" className="p-1 hover:text-dark"><FontAwesomeIcon icon={faEnvelope} /></a>
+                    <a href="mailto:tylerstreesolutions@gmail.com" className="p-1 hover:text-dark"><FontAwesomeIcon icon={faEnvelope} /></a>
                     <a href="https//:" className="p-1 hover:text-dark"><FontAwesomeIcon icon={faFacebook} /></a>
-                    <a href="tel:585-555-5555" className="p-1 hover:text-dark"><FontAwesomeIcon icon={faPhone}/></a>
+                    <a href="tel:585-802-9632" className="p-1 hover:text-dark"><FontAwesomeIcon icon={faPhone}/></a>
                 
                 </div>
             </div>

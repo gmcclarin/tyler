@@ -64,7 +64,7 @@ const Home = ( ) => {
                     <Reveal>
                     <div className="sm:flex justify-between text-sm sm:text-lg">
                         <div className="p-2">MISSION & VISION - tyler is dedicated to building other people's dreams </div>
-                        <div className="p-2">VISION.</div>
+                        <div className="p-2">Tree care that speaks volumes.</div>
                     </div>
                     </Reveal>
                 </div>
