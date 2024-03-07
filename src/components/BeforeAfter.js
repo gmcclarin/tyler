@@ -1,25 +1,31 @@
+import { useState } from "react";
 import Reveal from "./Reveal"
 
 const BeforeAfter = () => {
+
+    const jobs = [
+        {
+            id:1,
+            before: "https://i.postimg.cc/7Lm6S1cR/IMG-0049.avif",
+            after: "https://i.postimg.cc/59vJVqgM/IMG-0529.avif",
+            descr: "TRIMMING"
+        
+        },
+        {
+            id:2,
+            before:"https://i.postimg.cc/7Lm6S1cR/IMG-0049.avif",
+            after:"https://i.postimg.cc/7Lm6S1cR/IMG-0049.avif",
+            descr:"ROOF CLEARANCE"
+        }
+    ]
+       
+    const [chosenJob, setChosenJob] = useState(jobs[0])
+
     return (
-        <div className="w-full sm:flex bg-darker">
-                <div className="w-full sm:w-1/3 m-10 flex justify-center items-center">
-                    <Reveal>
-                    <div className="sm:flex justify-between">
-                        <div className="p-2 text-white">
-                            BEFORE & AFTER
-                        </div>
-                    </div>
-                    </Reveal>
-                </div>
-                <div className="w-full sm:w-1/3">
-                    <img className="object-cover" alt="placeholder" src="https://i.postimg.cc/nzNQQY9J/IMG-1008.avif" />
-                </div>
-                <div className="w-full sm:w-1/3">
-                    <img className="object-cover" alt="placeholder" src="https://i.postimg.cc/HnGVLYFW/IMG-1016.avif" />
-                </div>
-                
-            </div>
+        <div className="w-screen h-screen bg-olive relative">
+            <div className="absolute top-10 left-1/4 sm:w-1/3 md:w-1/4 lg:w-1/5"><img src={chosenJob.after} /></div>
+            <div className="absolute bottom-10 right-1/3 sm:w-1/2 md:1/3 lg:w-1/4"><img className="" src={chosenJob.before} /></div>
+        </div>
     )
 };
 
