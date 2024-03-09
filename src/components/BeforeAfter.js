@@ -48,27 +48,20 @@ const BeforeAfter = () => {
       }
 
     return (
-        <div className="w-screen h-screen flex justify-between items-center bg-olive relative">
-            <div
-                className="text-9xl mx-5 mb-5 text-right"
-                onClick={handleDown}>«</div>
-            <div className="w-3/4 m-10 flex">
+        <div className="w-screen h-screen md:flex justify-between items-center bg-olive relative">
+
             
-                <div className="mx-5">
-                    <div className="text-3xl m-1 italic ">BEFORE</div>
-                    <img src={chosenJob.after} />
+                <div className="w-full h-1/2 md:h-full md:w-1/2 relative">
+                    <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-accent">BEFORE</div>
+                    <img className="object-cover h-full w-full" src={chosenJob.before} />
                 </div>
                 
-                <div className="mx-5">
-                    <img className="" src={chosenJob.before} />
-                    <div className="text-4xl m-3 text-right italic">AFTER</div>
+                <div className="w-full h-1/2 md:h-full md:w-1/2 relative">
+                    <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-accent">AFTER</div>
+                    <img className="object-cover h-full w-full " src={chosenJob.after} />
+                    
                 </div>
 
-            </div>
-            
-            <div
-                className="text-9xl m-5 text-left"
-                onClick={handleUp}>»</div>
         </div>
     )
 };
