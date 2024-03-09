@@ -48,7 +48,7 @@ const BeforeAfter = () => {
       }
 
     return (
-        <div className="w-screen h-screen md:flex justify-between items-start bg-black relative">
+        <div className="w-screen h-screen md:flex justify-between items-start bg-stone-900 text-baseColor relative">
             <div className="w-full h-full">
                 <div className="w-full h-2/3 flex items-center">
                     <div className="w-full h-1/2 md:h-full md:w-1/2 relative">
@@ -62,14 +62,14 @@ const BeforeAfter = () => {
                         
                     </div>
                 </div>
-            <div className="md:h-1/3 w-full flex items-center justify-between text-3xl">
+            <div className="md:h-1/3 w-full flex items-center justify-between text-3xl ">
                 <div 
                 onClick={handleDown}
-                className="px-5 sm:text-5xl text-accent cursor-pointer animate-pulse">«</div>
-                <div className="text-baseColor italic ">{`[ The job: ]`} {chosenJob.descr}</div>
+                className="px-5 sm:text-6xl cursor-pointer animate-pulse">«</div>
+                <div className="italic ">{`[ The job: ]`} {chosenJob.descr}</div>
                 <div 
                 onClick={handleUp}
-                className="px-5 sm:text-5xl text-accent cursor-pointer animate-pulse">»</div>
+                className="px-5 sm:text-6xl cursor-pointer animate-pulse">»</div>
             </div>
 
             </div>
