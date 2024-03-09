@@ -92,23 +92,24 @@ const ReviewCarousel = () => {
         
 
     return (
-        <div className="w-screen h-screen md:flex items-center justify-center bg-darker">
+        <div className="w-screen h-screen md:flex items-center justify-center bg-darker text-baseColor">
             
-                <div className="text-white flex-col justify-center  font-bold" >
-                    <div className="border-b pt-20 p-6 text-4xl text-center">CUSTOMER REVIEWS</div>
-                    <div className='text-xl text-center flex justify-center items-center '>
-                        <div className="rounded-full border-2 px-4 p-2 m-5 bg-olive border-olive cursor-pointer"
+                <div className=" w-1/3 m-5 flex-col justify-center  font-bold" >
+                    <div className="border-b pt-20 p-5 text-4xl text-center">CUSTOMER REVIEWS</div>
+                    <div 
+                    className='text-xl text-center flex justify-center items-center '>
+                        <div className="rounded-full border-2 px-4 p-2 m-5 bg-olive border-olive cursor-pointer shadow-2xl shadow-black"
                         ><a href="https://www.google.com/search?q=tylers+tree+solutions&rlz=1C5CHFA_enUS899US899&oq=tylers&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIMCAAQRRg5GLEDGIAEMgYIARBFGDsyCQgCEAAYChiABDIJCAMQABgKGIAEMgcIBBAAGIAEMgYIBRBFGD0yBggGEEUYPDIGCAcQRRg80gEIMzc0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x89d153a2289fe4e9:0xb8b8532813616cc2,3,,,," rel="noopener" target="_blank">Leave a review</a>
                         </div>
                     </div>
                 </div>
-                <div className="w-full m-auto sm:w-1/2 py-5 flex justify-center items-center">
+                <div className="w-full m-auto sm:w-2/3 py-5 flex justify-center items-center">
                   
                         <div className="text-6xl mx-5 lg:mx-16 text-dark cursor-pointer"
                         onClick={handleDown}>«</div>
                         <div className="">
-                            <p className="font-bold text-white text-xl">{chosenReview.r}</p>
-                            <p className="italic text-lg text-white">- {chosenReview.first} {chosenReview.last}</p>
+                            <p className="font-bold text-xl">{chosenReview.r}</p>
+                            <p className="italic text-lg ">- {chosenReview.first} {chosenReview.last}</p>
                         </div>
                         <div className="text-6xl mx-5 lg:mx-16 text-dark cursor-pointer"
                         onClick={handleUp}>»</div>
