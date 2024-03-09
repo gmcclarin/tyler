@@ -48,20 +48,25 @@ const BeforeAfter = () => {
       }
 
     return (
-        <div className="w-screen h-screen md:flex justify-between items-center bg-olive relative">
-
-            
-                <div className="w-full h-1/2 md:h-full md:w-1/2 relative">
-                    <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2 border-white rounded-full p-1 animate-pulse">BEFORE</div>
-                    <img className="object-cover h-full w-full" src={chosenJob.before} />
-                </div>
-                
-                <div className="w-full h-1/2 md:h-full md:w-1/2 relative">
-                    <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2  border-white rounded-full p-1 animate-pulse ">AFTER</div>
-                    <img className="object-cover h-full w-full " src={chosenJob.after} />
+        <div className="w-screen h-screen md:flex justify-between items-start bg-black relative">
+            <div className="w-full h-full">
+                <div className="w-full h-3/4 flex items-center">
+                    <div className="w-full h-1/2 md:h-full md:w-1/2 relative">
+                        <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2 border-white rounded-full p-1 animate-pulse">BEFORE</div>
+                        <img className="object-cover h-full w-full" src={chosenJob.before} />
+                    </div>
                     
+                    <div className="w-full h-1/2 md:h-full md:w-1/2 relative">
+                        <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2  border-white rounded-full p-1 animate-pulse ">AFTER</div>
+                        <img className="object-cover h-full w-full " src={chosenJob.after} />
+                        
+                    </div>
                 </div>
+            <div className="md:h-1/4 w-full flex items-center justify-center">
+                <div className="text-white italic text-2xl">{`[ The job: ]`} {chosenJob.descr}</div>
+            </div>
 
+            </div>
         </div>
     )
 };
