@@ -11,7 +11,7 @@ import MobileNav from "../components/MobileNav";
 const Home = ( ) => {
 
     return(
-        <div className="bg-base relative overflow-x-hidden">
+        <div className="bg-baseColor relative overflow-x-hidden">
             <Nav/>
             <MobileNav />
             <div className="">
@@ -54,7 +54,7 @@ const Home = ( ) => {
             <BeforeAfter />
                 
                 {/* MISSION & VISION section */}
-            <div className="w-full sm:flex items-center bg-base">
+            <div className="w-full sm:flex items-center bg-baseColor">
                 <div className="hidden sm:flex sm:w-1/2">
                     <img className="object-cover" alt="placeholder" src={pic1}/>
                 </div>
