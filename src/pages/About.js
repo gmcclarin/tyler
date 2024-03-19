@@ -10,8 +10,9 @@ const About  = () => {
             <div className="flex w-screen justify-between">
                 <div className="m-20 p-10 flex justify-between">
                     <div className="font-bold text-3xl -rotate-90 ">ABOUT</div>
-                    <div>
-                        <p>THERE'S NOTHING HERE YET! </p>
+                    <div className="flex w-full justify-between items-center">
+                        <p className="w-1/2 p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <p className="w-1/2 p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                     </div>
                 </div>
