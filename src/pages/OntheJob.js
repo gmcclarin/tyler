@@ -19,7 +19,7 @@ const OntheJob = () => {
                 
                     <div className="container mx-auto px-2 py-2 lg:px-5 lg:pt-10 mt-20">
                         <div className="-m-1 flex flex-wrap md:-m-2">
-                            <div className="flex w-1/2 flex-wrap">
+                            <div className="flex sm:w-1/2 flex-wrap">
                             <div className="w-1/2 p-1 md:p-4">
                                 <img
                                 alt="gallery"
@@ -47,7 +47,7 @@ const OntheJob = () => {
                                 />
                             </div>
                             </div>
-                            <div className="flex w-1/2 flex-wrap">
+                            <div className="flex sm:w-1/2 flex-wrap">
                             <div className="w-full p-1 md:p-4">
                                 <img
                                 alt="gallery"
