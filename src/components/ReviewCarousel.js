@@ -92,10 +92,10 @@ const ReviewCarousel = () => {
         
 
     return (
-        <div className="w-screen h-screen md:flex items-center justify-center bg-stone-800 text-baseColor">
+        <div className="w-screen h-screen md:flex items-center justify-center bg-base text-black">
             
                 <div className=" w-1/3 m-5 flex-col justify-center  font-bold" >
-                    <div className="border-b pt-20 p-5 text-4xl text-center">CUSTOMER REVIEWS</div>
+                    <div className="border-b border-black pt-20 p-5 text-4xl text-center">CUSTOMER REVIEWS</div>
                     <div 
                     className='text-xl text-center flex justify-center items-center '>
                         <div className="rounded-full border-2 px-4 p-2 m-5 bg-olive border-olive cursor-pointer shadow-2xl shadow-black"
@@ -105,13 +105,13 @@ const ReviewCarousel = () => {
                 </div>
                 <div className="w-full m-auto sm:w-2/3 py-5 flex justify-center items-center">
                   
-                        <div className="text-6xl mx-5 lg:mx-16 text-dark cursor-pointer"
+                        <div className="text-6xl mx-5 lg:mx-16 text-black cursor-pointer"
                         onClick={handleDown}>«</div>
                         <div className="">
                             <p className="font-bold text-xl">{chosenReview.r}</p>
                             <p className="italic text-lg ">- {chosenReview.first} {chosenReview.last}</p>
                         </div>
-                        <div className="text-6xl mx-5 lg:mx-16 text-dark cursor-pointer"
+                        <div className="text-6xl mx-5 lg:mx-16 text-black cursor-pointer"
                         onClick={handleUp}>»</div>
                     
                 </div>
