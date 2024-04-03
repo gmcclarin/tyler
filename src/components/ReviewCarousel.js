@@ -92,9 +92,10 @@ const ReviewCarousel = () => {
         
 
     return (
-        <div className="w-screen h-screen md:flex items-center justify-center bg-base text-black">
-            
-                <div className=" w-1/3 m-5 flex-col justify-center  font-bold" >
+        <div className="w-screen md:flex items-center justify-center bg-base text-black">
+            <div className='w-full'>
+                <div className="w-full font-black text-5xl text-center italic py-20">WHAT CUSTOMERS ARE SAYING</div>
+                {/* <div className=" w-1/3 m-5 flex-col justify-center  font-bold" >
                     <div className="border-b border-black pt-20 p-5 text-4xl text-center">CUSTOMER REVIEWS</div>
                     <div 
                     className='text-xl text-center flex justify-center items-center '>
@@ -102,20 +103,20 @@ const ReviewCarousel = () => {
                         ><a href="https://www.google.com/search?q=tylers+tree+solutions&rlz=1C5CHFA_enUS899US899&oq=tylers&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIMCAAQRRg5GLEDGIAEMgYIARBFGDsyCQgCEAAYChiABDIJCAMQABgKGIAEMgcIBBAAGIAEMgYIBRBFGD0yBggGEEUYPDIGCAcQRRg80gEIMzc0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x89d153a2289fe4e9:0xb8b8532813616cc2,3,,,," rel="noopener" target="_blank">Leave a review</a>
                         </div>
                     </div>
-                </div>
-                <div className="w-full m-auto sm:w-2/3 py-5 flex justify-center items-center">
+                </div> */}
+                <div className="w-screen h-60 m-auto  py-5 flex justify-center items-center">
                   
-                        <div className="text-6xl mx-5 lg:mx-16 text-black cursor-pointer"
+                        <div className=" w-1/4 text-6xl mx-5 lg:mx-16 text-black cursor-pointer"
                         onClick={handleDown}>«</div>
-                        <div className="">
+                        <div className="w-2/4">
                             <p className="font-bold text-xl">{chosenReview.r}</p>
                             <p className="italic text-lg ">- {chosenReview.first} {chosenReview.last}</p>
                         </div>
-                        <div className="text-6xl mx-5 lg:mx-16 text-black cursor-pointer"
+                        <div className="w-1/4 text-6xl mx-5 lg:mx-16 text-black cursor-pointer"
                         onClick={handleUp}>»</div>
                     
                 </div>
-   
+            </div>
         </div>
     )
 };
