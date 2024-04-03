@@ -92,7 +92,7 @@ const ReviewCarousel = () => {
         
 
     return (
-        <div className="w-screen h-screen md:flex items-center justify-center bg-darker text-baseColor">
+        <div className="w-screen h-screen md:flex items-center justify-center bg-stone-800 text-baseColor">
             
                 <div className=" w-1/3 m-5 flex-col justify-center  font-bold" >
                     <div className="border-b pt-20 p-5 text-4xl text-center">CUSTOMER REVIEWS</div>
