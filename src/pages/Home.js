@@ -56,7 +56,7 @@ const Home = ( ) => {
                 {/* MISSION & VISION section */}
             <div className="w-full sm:flex items-center bg-baseColor">
                 <div className="hidden sm:flex sm:w-1/2">
-                    <img className="object-cover" alt="placeholder" src={pic1}/>
+                    <img className="object-cover m-5" alt="placeholder" src={pic1}/>
                 </div>
                 <div className="w-full sm:w-1/2 py-5 sm:p-10 flex justify-center items-center">
                     <Reveal>
