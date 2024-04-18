@@ -61,11 +61,14 @@ const BeforeAfter = () => {
                         <img className="object-cover h-full w-full" src={chosenJob.after} />
                     </div>
                 </div>
-            <div className="h-1/3 md:h-1/2 w-full flex items-center justify-between text-3xl ">
+            <div className="h-1/3 md:h-1/2 w-full flex items-center justify-center text-3xl ">
                 <div 
                 onClick={handleDown}
                 className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-10">«</div>
-                <div className="italic text-center font-black">{`[ The job: ]`} {chosenJob.descr}</div>
+                <div className="italic text-center font-black">
+                    <div className="text-2xl">THE JOB:</div>
+                    <div>{chosenJob.descr}</div>
+                </div>
                 <div 
                 onClick={handleUp}
                 className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-10 ">»</div>
