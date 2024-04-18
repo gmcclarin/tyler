@@ -49,8 +49,8 @@ const BeforeAfter = () => {
 
     return (
         <div className="w-screen h-screen md:flex justify-between items-start bg-baseColor  text-black relative">
-            <div className="w-full h-full">
-                <div className="w-full h-2/3 flex items-start">
+            <div className="w-full h-full m-auto">
+                <div className="w-full h-1/2 md:flex items-start">
                     <div className="w-full h-1/2 md:h-full md:w-1/2 relative">
                         <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2 border-white rounded-full p-1 animate-pulse">BEFORE</div>
                         <img className="object-cover h-full w-full" src={chosenJob.before} />
@@ -59,17 +59,16 @@ const BeforeAfter = () => {
                     <div className="w-full h-1/2 md:h-full md:w-1/2 relative">
                         <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2  border-white rounded-full p-1 animate-pulse ">AFTER</div>
                         <img className="object-cover h-full w-full" src={chosenJob.after} />
-                        
                     </div>
                 </div>
-            <div className="md:h-1/3 w-full flex items-center justify-between text-3xl ">
+            <div className="h-1/3 md:h-1/2 w-full flex items-center justify-between text-3xl ">
                 <div 
                 onClick={handleDown}
-                className="px-5 sm:text-6xl cursor-pointer animate-pulse">«</div>
+                className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-10">«</div>
                 <div className="italic text-center font-black">{`[ The job: ]`} {chosenJob.descr}</div>
                 <div 
                 onClick={handleUp}
-                className="px-5 sm:text-6xl cursor-pointer animate-pulse">»</div>
+                className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-10 ">»</div>
             </div>
 
             </div>
