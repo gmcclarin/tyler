@@ -58,7 +58,7 @@ const Home = ( ) => {
                 <div className="hidden sm:flex sm:w-1/2">
                     <img className="object-cover m-5" alt="placeholder" src={pic1}/>
                 </div>
-                <div className="w-full sm:w-1/2 py-5 sm:p-10 flex justify-center items-center">
+                <div className="w-full sm:w-1/2 my-5 sm:m-10 flex justify-center items-center">
                     <Reveal>
                     <div className="sm:flex justify-between text-sm sm:text-lg">
                         <div className="p-2">MISSION & VISION - tyler is dedicated to building other people's dreams </div>

@@ -104,11 +104,11 @@ const ReviewCarousel = () => {
                         </div>
                     </div>
                 </div> */}
-                <div className="w-screen h-60 m-auto  py-5 flex justify-center items-center">
+                <div className="w-screen h-80 lg:h-60 m-auto  py-5 flex justify-center items-center">
                         <div className=" w-1/4 text-6xl mx-5 lg:mx-16 text-black cursor-pointer"
                         onClick={handleDown}>«</div>
                         <div className="w-2/4">
-                            <p className="font-bold text-xl">{chosenReview.r}</p>
+                            <p className="font-bold text-md sm:text-xl">{chosenReview.r}</p>
                             <p className="italic text-lg ">- {chosenReview.first} {chosenReview.last}</p>
                         </div>
                         <div className="w-1/4 text-6xl mx-5 lg:mx-16 text-black cursor-pointer"
