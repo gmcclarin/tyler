@@ -14,7 +14,9 @@ module.exports = {
         "darker" : "#1e3118",
         "dark" : "#578E44",
         "baseColor" : "#EEF0E5",
-        "accent" :"#cc6600"
+        "accent" :"#cc6600",
+        "logoBg" : "#558c44",
+        "logoTree" : "#c2e3b6"
         // white : 
 
       },
