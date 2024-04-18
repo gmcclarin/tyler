@@ -78,7 +78,7 @@ const Home = ( ) => {
                 {/* LEFT SIDE */}
                 <div  className="mt-20 w-full sm:w-1/2">
                     <div className="m-8 text-xl sm:text-3xl font-bold">CONTACT</div>
-                    <div className="m-8 text-lg">Ready to talk trees? If you have a question or want talk about a potential job, this is the right place.</div>
+                    <div className="m-8 text-lg">Ready to talk trees? If you have a question or want talk about a potential job, you're in the right place.</div>
                 </div>
 
                 {/* RIGHT SIDE & THE FORM */}
