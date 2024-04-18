@@ -64,14 +64,14 @@ const BeforeAfter = () => {
             <div className="h-1/3 md:h-1/2 w-full flex items-center justify-center text-3xl ">
                 <div 
                 onClick={handleDown}
-                className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-10">«</div>
-                <div className="italic text-center font-black">
-                    <div className="text-2xl">THE JOB:</div>
-                    <div>{chosenJob.descr}</div>
+                className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10">«</div>
+                <div className="italic text-center w-1/2 font-black">
+                    <div className="text-xl md:text-2xl">THE JOB:</div>
+                    <div className="text-2xl md:text-3xl">{chosenJob.descr}</div>
                 </div>
                 <div 
                 onClick={handleUp}
-                className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-10 ">»</div>
+                className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10 ">»</div>
             </div>
 
             </div>
