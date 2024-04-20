@@ -15,10 +15,10 @@ const OntheJob = () => {
             
             {/* GALLERY HERE - MASON???? */}
             <div className="p-1 sm:p-2 pt-10 min-h-screen">
-                <div className="mt-20 mx-10 flex items-center justify-between">
+                {/* <div className="mt-20 mx-10 flex items-center justify-between">
                     <div className="w-1/2">Welcome to The Gallery! </div>
                     <div className="w-1/2">on the job </div>
-                </div>
+                </div> */}
             <div className="flex">
                 
                     <div className="container mx-auto px-2 py-2 lg:px-5 lg:pt-10 mt-10">

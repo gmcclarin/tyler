@@ -17,8 +17,8 @@ const About  = () => {
                 </div>
             </div>
             <div className=" text-center font-bold my-12">
-                <p >Ready to experience Tyler's Tree Solutions?</p>
-                <p>Let's Talk Trees.</p> 
+                <p className="italic">ASK ABOUT OUR LEAVE ALL SPECIAL</p>
+                <p className="w-1/3 sm:w-1/4  mx-auto animate-pulse text-sm lg:text-xl font-extrabold text-stone-800 p-1 border-2 border-stone-800 rounded-full hover:text-accent hover:border-accent cursor-pointer">Let's Talk Trees.</p> 
             </div>
             
             <Footer />

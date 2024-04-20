@@ -10,7 +10,7 @@ const ServicesPage = () => {
             <MobileNav />
             <Nav />
            
-            <div className="py-24 sm:py-32 p-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8  bg-base text-darker">
+            <div className="pt-24 sm:pt-32 p-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8  bg-base text-darker">
             <div className="grid grid-rows-3 items-center">
                 <div className="text-4xl font-bold">TRIMMING</div>
                 <div className="text-xl">It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.</div>
