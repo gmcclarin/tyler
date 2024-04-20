@@ -60,7 +60,7 @@ const Home = ( ) => {
                 </div>
                 <div className="w-full sm:w-1/2 my-5 sm:m-10 flex justify-center items-center">
                     <Reveal>
-                    <div className="text-sm sm:text-xl">
+                    <div className="text-sm  sm:text-xl">
                         <div className="p-10 sm:p-5 md:p-20"><strong>MY MISSION</strong> is to use my skills and knowledge to help decide which top quality solutions are specific to YOU and YOUR trees! I am committed to continuing to grow in my usefulness to become an integral part of my customer's tree care solutions.</div> 
                     </div>
                     </Reveal>
