@@ -55,14 +55,13 @@ const Home = ( ) => {
                 
                 {/* MISSION & VISION section */}
             <div className="w-full sm:flex items-center bg-baseColor">
-                <div className="hidden md:flex sm:w-1/2">
-                    <img className="object-cover m-5" alt="placeholder" src={pic1}/>
+                <div className=" sm:flex sm:w-1/2">
+                    <img className="w-80 sm:w-96 md:object-cover m-5" alt="placeholder" src={pic1}/>
                 </div>
                 <div className="w-full sm:w-1/2 my-5 sm:m-10 flex justify-center items-center">
                     <Reveal>
-                    <div className="text-sm sm:text-lg">
-                        <div className="p-10 sm:p-5"><p className="font-bold">MISSION & VISION</p>At Tyler's Tree Services, our mission is simple: to provide unparalleled tree care services while prioritizing the health and longevity of your trees and the safety of your property. With a deep-rooted commitment to excellence, we strive to exceed our clients' expectations with every project we undertake.</div>
-                        <div className="p-10 sm:p-5"><p className="font-bold">WHO WE ARE</p>Tyler's Tree Services is a family-owned and operated business, serving the [Your Location] community and surrounding areas for [Number of Years] years. Founded by Tyler Johnson, a certified arborist with a genuine love for trees, our company has grown from humble beginnings to become a trusted name in the industry.</div>
+                    <div className="text-sm sm:text-xl">
+                        <div className="p-10 sm:p-5 md:p-20"><strong>MY MISSION</strong> is to use my skills and knowledge to help decide which top quality solutions are specific to YOU and YOUR trees! I am committed to continuing to grow in my usefulness to become an integral part of my customer's tree care solutions.</div> 
                     </div>
                     </Reveal>
                 </div>
