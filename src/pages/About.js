@@ -11,13 +11,16 @@ const About  = () => {
                 <div className="lg:mx-20 mt-20 p-10 flex justify-between">
                     <div className="hidden md:flex font-black text-5xl -rotate-90 transform translate-x-3/4">ABOUT</div>
                     <div className="sm:flex w-full justify-between ">
-                        <p className="sm:w-1/2 p-5"><p className="font-bold">Who We Are</p> Tyler's Tree Services is a family-owned and operated business, serving the [Your Location] community and surrounding areas for [Number of Years] years. Founded by Tyler Johnson, a certified arborist with a genuine love for trees, our company has grown from humble beginnings to become a trusted name in the industry. </p>
-                        <p className="sm:w-1/2 p-5"><p className="font-bold">Tyler's Promise</p> When you choose Tyler's Tree Services, you can rest assured that your trees are in capable hands. We promise to treat your property with the utmost respect, to communicate openly and honestly throughout the process, and to deliver results that exceed your expectations. Your satisfaction is our priority, and we won't consider the job done until you're fully satisfied with the outcome.</p>
+                        <p className="sm:w-1/2 p-5"><strong>Based in Upstate NY</strong>, Tyler has always had a passion for the outdoors. Ever since Tyler was a child, he has loved climbing trees. He has spent a lot of time learning and observing nature. He enjoys walks in the woods, admiring God's creation. </p>
+                        <p className="sm:w-1/2 p-5"><strong>Tyler started doing tree work in 2018</strong> and his passion has only grown since. Tyler's goal is to be able to called an expert in all things tree work. He is committed to increasing his knowledge through studying tree health and indentification. Tyler's Tree Solution was created to showcase Tyler's skills in treework, run an intergitable buisness and provide incredible customer service while making the world beautiful; one freshly cut tree at a time!</p>
                     </div>
                 </div>
             </div>
-            <div className="sm:w-1/2 sm:mx-20 p-10 font-bold">Ready to experience the Tyler's Tree Services difference? Contact us today to schedule a consultation or request a quote. Let us help you keep your trees healthy, vibrant, and beautiful for years to come.</div>
-            <div className="sm:w-1/2 sm:mx-20 p-10 font-bold">Thank you for considering Tyler's Tree Services for your tree care needs.</div>
+            <div className=" text-center font-bold my-12">
+                <p >Ready to experience Tyler's Tree Solutions?</p>
+                <p>Let's Talk Trees.</p> 
+            </div>
+            
             <Footer />
 
         </div>
