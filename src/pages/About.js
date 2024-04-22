@@ -1,6 +1,7 @@
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import MobileNav from "../components/MobileNav";
+import Contact from "../components/Contact";
 
 const About  = () => {
     return (
@@ -18,9 +19,12 @@ const About  = () => {
             </div>
             <div className=" text-center font-bold my-12">
                 <p className="italic">ASK ABOUT OUR LEAVE ALL SPECIAL</p>
-                <p className="w-1/3 sm:w-1/4  mx-auto animate-pulse text-sm lg:text-xl font-extrabold text-stone-800 p-1 border-2 border-stone-800 rounded-full hover:text-accent hover:border-accent cursor-pointer">Let's Talk Trees.</p> 
+                {/* <p className="w-1/3 sm:w-1/4  mx-auto animate-pulse text-sm lg:text-xl font-extrabold text-stone-800 p-1 border-2 border-stone-800 rounded-full hover:text-accent hover:border-accent cursor-pointer">
+                    <a href="/#contactform">LET'S TALK TREES</a>
+                </p>  */}
             </div>
-            
+
+           
             <Footer />
 
         </div>
