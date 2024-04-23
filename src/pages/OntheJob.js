@@ -27,26 +27,26 @@ const OntheJob = () => {
                             <div className="w-1/2 p-1 md:p-4">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-cover object-center"
+                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
                                 src="https://i.postimg.cc/7Lm6S1cR/IMG-0049.avif" />
                             </div>
                             <div className="w-1/2 p-1 md:p-4">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-cover object-center"
+                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
                                 src="https://i.postimg.cc/59vJVqgM/IMG-0529.avif" />
                             </div>
                             <div className="w-full p-1 md:p-4">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-cover object-center"
+                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
                                 src="https://i.postimg.cc/mrwc8Wc8/IMG-1004-preview.avif"
                                 />
                             </div>
                             <div className="w-full p-1 md:p-4">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-contain object-center"
+                                className="hover:scale-105 duration-300 block h-full w-full object-contain object-center"
                                 src={p01}
                                 />
                             </div>
@@ -55,32 +55,32 @@ const OntheJob = () => {
                             <div className="w-full p-1 md:p-4">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-cover object-center"
+                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
                                 src="https://i.postimg.cc/pVgD9xKF/IMG-0428.avif"
                                 />
                             </div>
                             <div className="w-1/2 p-1 md:p-4">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-cover object-center"
+                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
                                 src="https://i.postimg.cc/4xXHt3ym/IMG-1007.avif" />
                             </div>
                             <div className="w-1/2 p-1 md:p-4">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-cover object-center"
+                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
                                 src="https://i.postimg.cc/nzNQQY9J/IMG-1008.avif" />
                             </div>
                             <div className="w-1/2 p-1 md:p-4">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-cover object-left"
+                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-left"
                                 src="https://i.postimg.cc/HnGVLYFW/IMG-1016.avif" />
                             </div>
                             <div className="w-1/2 p-1 md:p-4">
                                 <img
                                 alt="gallery"
-                                className="block h-full w-full object-cover object-center"
+                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
                                 src="https://i.postimg.cc/VNpN7sf9/IMG-1015.avif" />
                             </div>
                             </div>
