@@ -38,7 +38,7 @@ const ServicesPage = () => {
 
                 <div className="grid grid-rows-2 items-center">
                     <div className="text-4xl font-bold">CANOPY RAISES</div>
-                    <div className="text-xl">It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.</div>
+                    <div className="text-xl">"Elevate your outdoor space with the professional canopy raise service. Trim and shape tree canopies, allowing more sunlight to filter through and enhancing the aesthetic appeal of your landscape. Trust Tyler to elevate your landscape to new heights."</div>
                     <div className="my-10">
                     <p>_______________________________</p>
                     STARTING AT $299</div>
