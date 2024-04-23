@@ -46,7 +46,7 @@ const ServicesPage = () => {
 
                 <div className="grid grid-rows-2 items-center">
                     <div className="text-4xl font-bold">DEADWOOD</div>
-                    <div className="text-xl">It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.</div>
+                    <div className="text-xl">Deadwood not only compromises the aesthetic appeal of your landscape but also poses significant safety risks. Professional technique and equipment are used to assess, prune, and safely remove deadwood, promoting the health and longevity of your trees while enhancing the safety of your property.</div>
                     <div className="my-10">
                     <p>_______________________________</p>
                     STARTING AT $299</div>
@@ -54,7 +54,7 @@ const ServicesPage = () => {
 
                 <div className="grid grid-rows-2 items-center">
                     <div className="text-4xl font-bold">STORM DAMAGE</div>
-                    <div className="text-xl">It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.</div>
+                    <div className="text-xl">Storms can wreak havoc on trees, leaving behind broken branches, uprooted trunks, and scattered debris. From emergency tree removal to strategic pruning and structural support, safety and efficiency is the highest priority to mitigate further risks and revitalize your outdoor space. </div>
                     <div className="my-10">
                     <p>_______________________________</p>
                     STARTING AT $299</div>

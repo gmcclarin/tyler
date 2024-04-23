@@ -134,7 +134,7 @@ const Contact = () => {
                 </div>
                 <button type="submit" 
                 disabled={isSubmitting}
-                className="bg-white text-black rounded-xl px-2 p-1 shadow-2xl shadow-black">
+                className="bg-white text-black rounded-xl px-4 p-1 shadow-2xl shadow-black">
                   Send
                 </button>
               </form>   
