@@ -60,6 +60,14 @@ const ServicesPage = () => {
                     STARTING AT $299</div>
                 </div>
 
+                <div className="grid grid-rows-2 items-center">
+                    <div className="text-4xl font-bold">*LEAVE ALL SPECIAL*</div>
+                    <div className="text-xl">Every client is unique, with varying arboreal needs. Ask about this customized tree service to elevate your outdoor space and leave your trees healthier and your lanscape more beautiful.</div>
+                    <div className="my-10">
+                    <p>_______________________________</p>
+                    PRICES VARY</div>
+                </div>
+
             </div>
 
             <div className="mb-10 font-bold text-center italic text-lg sm:text-xl m-auto">Prices vary depending on size and traveling distance</div>
