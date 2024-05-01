@@ -10,14 +10,14 @@ export default function MobileNav () {
                 <div className="flex">
                     
                     <div onClick={()=> setShowMenu(!showMenu)}  className="sm:hidden fixed top-3 left-3 p-1 space-y-1 z-10">
-                        <div className="w-8 h-1 bg-accent"></div>
-                        <div className="w-8 h-1 bg-accent"></div>
-                        <div className="w-8 h-1 bg-accent"></div>
+                        <div className="w-8 h-1 bg-dark"></div>
+                        <div className="w-8 h-1 bg-dark"></div>
+                        <div className="w-8 h-1 bg-dark"></div>
                     </div>
 
                     {/* ------------- FOR MOBILE ---------------- */}
-                    <ul className={showMenu ? "bg-orange-600 absolute z-50  left-0 top-0 w-full p-5 space-y-5 text-center rounded-b-3xl" : 
-                    "hidden bg-orange-600 absolute left-0 top-0 w-full p-7 space-y-8 text-center rounded-b-3xl"}>
+                    <ul className={showMenu ? "bg-dark fixed z-50  left-0 top-0 w-full p-5 space-y-5 text-center rounded-b-3xl" : 
+                    "hidden absolute left-0 top-0 w-full p-7 space-y-8 text-center rounded-b-3xl"}>
                         <li>
                             <a
                             href="/"
