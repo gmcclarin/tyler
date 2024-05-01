@@ -20,7 +20,7 @@ const Home = ( ) => {
 
                     <div id="homeimage" className="w-screen h-screen flex items-center justify-center">
                         {/* <img className="min-w-full min-h-full shrink-0 object-cover" src={pic2} /> */}
-                        <div className="animate-pulse text-3xl font-extrabold text-white p-1 border-2 border-white rounded-full hover:text-darker hover:border-darker cursor-pointer">
+                        <div className="animate-pulse text-3xl font-extrabold text-white p-1 border-4 border-white rounded-full hover:text-dark hover:border-dark cursor-pointer">
                             <a href="#contactform">LET'S TALK TREES</a>
                         </div>
                     </div>
