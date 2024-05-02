@@ -11,7 +11,6 @@
  - front-end only email JS
  - on the job responsive gallery
  - leave a google review!
- - 404 not found
  - google reviews carousel
  - react router v 6
  - responsive mobile design
