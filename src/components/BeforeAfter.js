@@ -132,11 +132,11 @@ const BeforeAfter = () => {
     return (
         <div className="w-screen md:flex justify-between items-start bg-baseColor  text-black relative">
             <div className="w-full h-full m-auto">
-                <div className="w-full h-1/2 md:flex justify-center items-center">
+                <div className="w-full h-1/2 sm:flex justify-center items-center">
 
                 <div 
                 onClick={handleDown}
-                className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10">«</div>
+                className="hidden sm:flex px-5 sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10">«</div>
 
                     <div className="w-full h-1/2 md:h-full md:w-1/3 relative">
                         <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2 border-white rounded-full p-1 animate-pulse">BEFORE</div>
@@ -148,9 +148,20 @@ const BeforeAfter = () => {
                         <img className=" h-full w-full" src={chosenJob.after} />
                     </div>
 
+                    
+                    {/* only appears when in mobile / small screen size */}
+                    <div className="flex justify-center py-3">
+                        <div 
+                        onClick={handleDown}
+                        className="flex sm:hidden px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10">«</div>
+                        <div 
+                        onClick={handleUp}
+                        className="flex sm:hidden px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10 ">»</div>
+                    </div>
+
                     <div 
                     onClick={handleUp}
-                    className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10 ">»</div>
+                    className="hidden sm:flex px-5 sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10 ">»</div>
 
                 </div>
 
