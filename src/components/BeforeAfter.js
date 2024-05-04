@@ -136,7 +136,7 @@ const BeforeAfter = () => {
 
                 <div 
                 onClick={handleDown}
-                className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10">«</div>
+                className="sm:px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10">«</div>
                     <div className="block sm:flex">
                         <div className="w-full sm:w-1/2 h-1/2 md:h-full relative">
                             <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2 border-white rounded-full p-1 animate-pulse">BEFORE</div>
@@ -148,20 +148,11 @@ const BeforeAfter = () => {
                             <img className=" h-full w-full" src={chosenJob.after} />
                         </div>
                     </div>
-                    
-                    {/* only appears when in mobile / small screen size */}
-                    {/* <div className="flex justify-center py-3">
-                        <div 
-                        onClick={handleDown}
-                        className="flex sm:hidden px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10">«</div>
-                        <div 
-                        onClick={handleUp}
-                        className="flex sm:hidden px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10 ">»</div>
-                    </div> */}
+                
 
                     <div 
                     onClick={handleUp}
-                    className="px-5 sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10 ">»</div>
+                    className="sm:px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10 ">»</div>
 
                 </div>
 
