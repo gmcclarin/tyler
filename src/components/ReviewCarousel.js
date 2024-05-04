@@ -117,7 +117,7 @@ const ReviewCarousel = () => {
 
                 <div 
                     className='text-xl text-center flex justify-center items-center '>
-                        <div className="text-white font-bold rounded-full px-4 p-2 m-5 hover:bg-accent bg-olive cursor-pointer shadow-2xl shadow-black"
+                        <div className="text-white font-bold rounded-full px-4 p-2 m-5 hover:bg-darker bg-olive cursor-pointer shadow-2xl shadow-black"
                         ><a href="https://www.google.com/search?q=tylers+tree+solutions&rlz=1C5CHFA_enUS899US899&oq=tylers&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIMCAAQRRg5GLEDGIAEMgYIARBFGDsyCQgCEAAYChiABDIJCAMQABgKGIAEMgcIBBAAGIAEMgYIBRBFGD0yBggGEEUYPDIGCAcQRRg80gEIMzc0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x89d153a2289fe4e9:0xb8b8532813616cc2,3,,,," rel="noopener" target="_blank">LEAVE A REVIEW</a>
                         </div>
                 </div>

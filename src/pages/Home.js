@@ -44,7 +44,7 @@ const Home = ( ) => {
                         <div className="flex justify-center">
                             <a 
                             href="/services"
-                            className="px-5 p-3 hover:bg-accent bg-olive text-white font-bold rounded-full shadow-2xl shadow-black">ALL SERVICES</a>
+                            className="px-5 p-3 hover:bg-darker bg-olive text-white font-bold rounded-full shadow-2xl shadow-black">ALL SERVICES</a>
                         </div>
                     </div>
                 </div>
