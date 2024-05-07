@@ -1,11 +1,12 @@
 import tree from "../photos/treeLogo.png"
+import tree2 from "../photos/treeLogo2.png"
 
 const Nav = () => {
     return (
         <nav className="hidden fixed z-50 top-0 font-sans sm:flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-stone-900 shadow sm:items-baseline w-full">
             <div className="mb-2 sm:mb-0">
                 <a href="/" className=" flex text-lg md:text-2xl font-bold no-underline text-stone-200 hover:text-white ">TYLER'S TREE SOLUTIONS
-                    <img alt="treeLogo" src={tree} style={{height:"35px"}} />
+                    <img alt="treeLogo" src={tree2} style={{height:"35px"}} />
                 </a>
             </div>
             <div>
