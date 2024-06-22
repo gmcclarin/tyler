@@ -35,6 +35,13 @@ const Footer = () => {
 
                 </div>
                 
+               
+                <div className="w-1/2 sm:w-full font-bold text-xs hover:text-dark hover:border-dark rounded-full border-2 border-darker p-1 px-5">
+                    <a href="https://www.google.com/search?q=tylers+tree+solutions&rlz=1C5CHFA_enUS899US899&oq=tylers&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIMCAAQRRg5GLEDGIAEMgYIARBFGDsyCQgCEAAYChiABDIJCAMQABgKGIAEMgcIBBAAGIAEMgYIBRBFGD0yBggGEEUYPDIGCAcQRRg80gEIMzc0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x89d153a2289fe4e9:0xb8b8532813616cc2,3,,,," 
+                        target="_blank"
+                        rel="noreferrer">
+                        GREAT EXPERIENCE? LEAVE A REVIEW</a>
+                </div>
                 <div>
                     <FontAwesomeIcon icon={faStar} />
                     <FontAwesomeIcon icon={faStar} />
@@ -42,13 +49,6 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faStar} />
                     <FontAwesomeIcon icon={faStar} />
                 </div>
-                <div className="w-1/2 sm:w-full font-bold text-xs hover:text-dark hover:border-dark rounded-full border-2 border-darker p-1 px-5">
-                    <a href="https://www.google.com/search?q=tylers+tree+solutions&rlz=1C5CHFA_enUS899US899&oq=tylers&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIMCAAQRRg5GLEDGIAEMgYIARBFGDsyCQgCEAAYChiABDIJCAMQABgKGIAEMgcIBBAAGIAEMgYIBRBFGD0yBggGEEUYPDIGCAcQRRg80gEIMzc0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x89d153a2289fe4e9:0xb8b8532813616cc2,3,,,," 
-                        target="_blank"
-                        rel="noreferrer">
-                        GREAT EXPERIENCE? LEAVE A REVIEW</a>
-                </div>
-
             </div>
         </div>
     )
