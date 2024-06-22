@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="p-5 sm:p-10">
                 <div>CONTACT</div>
                 <div><a className="hover:text-dark" href="mailto:tylerstreesolutions@gmail.com" target="_blank" rel="noreferrer" >tylerstreesolutions@gmail.com</a></div>
-                <div>(585) 802 - 9632 </div>
+                <div><a className="hover:text-dark" href="tel:585-802-9632" target="_blank" rel="noreferrer">(585) 802 - 9632</a></div>
             </div>
 
             <div className="p-5 sm:p-10">
