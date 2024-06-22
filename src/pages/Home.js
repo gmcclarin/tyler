@@ -25,17 +25,6 @@ const Home = ( ) => {
                         </div>
                     </div>
 
-                    {/* three pictures ful screen version */}
-                    {/* <div className="w-1/3 h-full overflow-hidden items-center flex justify-end ">
-                        <img className="min-w-full min-h-full shrink-0 object-cover" src={pic1} />
-                    </div>
-                    <div className="w-1/3 h-full overflow-hidden items-center flex justify-end ">
-                        <img className="min-w-full min-h-full shrink-0 object-cover" src={pic2} />
-                    </div>
-                    <div className="w-1/3 h-full overflow-hidden items-center flex justify-end ">
-                        <img className="min-w-full min-h-full shrink-0 object-cover" src={pic3} />
-                    </div> */}
-                    {/* END three fullscreen pictures */}
                 </div>
                 
                 <div className="w-screen h-screen flex items-center justify-center">
@@ -44,7 +33,7 @@ const Home = ( ) => {
                         <div className="flex justify-center">
                             <a 
                             href="/services"
-                            className="px-5 p-3 hover:bg-darker bg-olive text-white font-bold rounded-full shadow-2xl shadow-black">ALL SERVICES</a>
+                            className="px-5 p-3 hover:bg-dark bg-darker text-white font-bold rounded-full shadow-2xl shadow-black">ALL SERVICES</a>
                         </div>
                     </div>
                 </div>
