@@ -1,7 +1,5 @@
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
-import Reveal from "../components/Reveal"
-import ServicesMarquee from "../components/ServicesMarquee";
 import MobileNav from "../components/MobileNav";
 
 const ServicesPage = () => {

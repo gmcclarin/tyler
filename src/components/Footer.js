@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="sm:flex justify-between w-full text-darker font-bold">
             <div className="p-5 sm:p-10">
                 <div>CONTACT</div>
-                <div>tylerstreesolutions@gmail.com</div>
+                <div><a className="hover:text-dark" href="mailto:tylerstreesolutions@gmail.com" target="_blank" rel="noreferrer" >tylerstreesolutions@gmail.com</a></div>
                 <div>(585) 802 - 9632 </div>
             </div>
 
