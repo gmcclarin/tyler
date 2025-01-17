@@ -41,16 +41,15 @@ const Home = ( ) => {
             </div>
             
             <BeforeAfter />
-                
                 {/* MISSION & VISION section */}
             <div className="w-full sm:flex items-center bg-baseColor">
-                <div className=" sm:flex sm:w-1/2 justify-center">
-                    <img className="w-80 sm:w-96 md:object-cover m-5" alt="placeholder" src={pic1}/>
+                <div className=" sm:flex sm:w-1/2 justify-end ">
+                    <img className="sm:w-96 md:object-cover p-5" alt="placeholder" src={pic1}/>
                 </div>
                 <div className="w-full sm:w-1/2 my-5 sm:m-10 flex justify-center items-center">
                     <Reveal>
-                    <div className="text-sm  sm:text-xl">
-                        <div className="p-10 sm:p-5 md:p-20"><strong>MY MISSION</strong> is to use my skills and knowledge to help decide which top quality solutions are specific to YOU and YOUR trees! I am committed to continuing to grow in my usefulness to become an integral part of my customer's tree care solutions.</div> 
+                    <div className="text-sm  sm:text-xl font-serif">
+                        <div className="p-10 sm:p-5 md:p-15 lg:p-20"><strong>MY MISSION</strong> is to use my skills and knowledge to help decide which top quality solutions are specific to YOU and YOUR trees! I am committed to continuing to grow in my usefulness to become an integral part of my customer's tree care solutions.</div> 
                     </div>
                     </Reveal>
                 </div>
@@ -59,8 +58,6 @@ const Home = ( ) => {
             {/* REVIEW CAROUSEL */}
             
             <ReviewCarousel />
-         
-
             {/* ############ CONTACT FORM #1 #############*/}
             <div id="contactform" className="sm:flex w-full">
                 {/* LEFT SIDE */}

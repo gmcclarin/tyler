@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Reveal from "./Reveal"
 
 const BeforeAfter = () => {
 
@@ -104,55 +103,42 @@ const BeforeAfter = () => {
             after:"https://i.postimg.cc/wTgDfqNn/IMG-1577.avif",
             descr:"TRIMMING"
         }
-          // xx
     ]
        
     const [chosenJob, setChosenJob] = useState(jobs[0])
 
-
     const handleDown = () => {
-        if (chosenJob.id > 1) {
-            setChosenJob(jobs[chosenJob.id - 2])
-        } else {
-            setChosenJob(jobs[jobs.length - 1])
-           
-        }
+        setChosenJob(jobs[(chosenJob.id - 2 + jobs.length) % jobs.length]);
+    };
     
-      }
-   
-      const handleUp = () => {
-       if ( chosenJob.id < jobs.length) {
-        setChosenJob(jobs[chosenJob.id])
-       } else {
-        setChosenJob(jobs[0])
-       }
-   
-      }
+    const handleUp = () => {
+        setChosenJob(jobs[chosenJob.id % jobs.length]);
+    };    
 
     return (
-        <div className="w-screen md:flex justify-between items-start bg-baseColor  text-black relative">
+        <div className="w-screen h-[90vh] md:flex justify-between items-start bg-baseColor  text-black relative">
             <div className="w-full h-full m-auto">
-                <div className="w-full h-1/2 flex justify-center items-center">
+                <div className="w-full flex">
 
                 <div 
                 onClick={handleDown}
-                className="sm:px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10">«</div>
-                    <div className="block sm:flex">
-                        <div className="w-full sm:w-1/2 h-1/2 md:h-full relative">
-                            <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2 border-white rounded-full p-3 animate-pulse">BEFORE</div>
-                            <img className=" h-full w-full" src={chosenJob.before} alt="before" />
+                className="sm:px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5">«</div>
+                    <div className="">
+                        <div className="w-full relative p-4">
+                            <div className="absolute text-4xl italic bottom-px left-1/2 -translate-x-1/2  font-bold text-center text-white border-4 border-white rounded-full p-3">BEFORE</div>
+                            <img className=" w-1/2 " src={chosenJob.before} alt="before" />
                         </div>
                         
-                        <div className="w-full sm:w-1/2 h-1/2 md:h-full relative">
-                            <div className="absolute text-4xl italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-center text-white border-2  border-white rounded-full p-3 animate-pulse ">AFTER</div>
-                            <img className=" h-full w-full" src={chosenJob.after} alt="after" />
+                        <div className="w-full flex justify-end relative p-4">
+                            <div className="absolute text-4xl italic bottom-px left-1/2 -translate-x-1/2 font-bold text-center text-white border-4  border-white rounded-full p-3">AFTER</div>
+                            <img className=" w-1/2 object-cover " src={chosenJob.after} alt="after" />
                         </div>
                     </div>
                 
 
                     <div 
                     onClick={handleUp}
-                    className="sm:px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5 sm:mx-10 ">»</div>
+                    className="sm:px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5">»</div>
 
                 </div>
 
