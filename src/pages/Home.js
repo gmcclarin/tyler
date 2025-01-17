@@ -27,7 +27,7 @@ const Home = ( ) => {
 
                 </div>
                 
-                <div className="w-screen h-screen flex items-center justify-center">
+                <div className="w-screen h-[80vh] sm:h-screen flex items-center justify-center">
                     <div className="">
                         <ServicesMarquee />
                         <div className="flex justify-center">
@@ -39,8 +39,6 @@ const Home = ( ) => {
                 </div>
 
             </div>
-            
-            <BeforeAfter />
                 {/* MISSION & VISION section */}
             <div className="w-full sm:flex items-center bg-baseColor">
                 <div className=" sm:flex sm:w-1/2 justify-end ">
@@ -58,6 +56,11 @@ const Home = ( ) => {
             {/* REVIEW CAROUSEL */}
             
             <ReviewCarousel />
+
+
+            <BeforeAfter />
+
+            
             {/* ############ CONTACT FORM #1 #############*/}
             <div id="contactform" className="sm:flex w-full">
                 {/* LEFT SIDE */}
