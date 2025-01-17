@@ -116,22 +116,22 @@ const BeforeAfter = () => {
     };    
 
     return (
-        <div className="w-screen h-[90vh] md:flex justify-between items-start bg-baseColor  text-black relative">
+        <div className="w-screen h-1/2 sm:h-[90vh] md:flex justify-between items-start bg-baseColor  text-black relative">
             <div className="w-full h-full m-auto">
-                <div className="w-full flex">
+                <div className="w-full h-full flex">
 
                 <div 
                 onClick={handleDown}
                 className="sm:px-5 text-4xl sm:text-6xl cursor-pointer animate-pulse mx-5">«</div>
                     <div className="">
-                        <div className="w-full relative p-4">
-                            <div className="absolute text-4xl italic bottom-px left-1/2 -translate-x-1/2  font-bold text-center text-white border-4 border-white rounded-full p-3">BEFORE</div>
-                            <img className=" w-1/2 " src={chosenJob.before} alt="before" />
+                        <div className="w-full relative p-2 sm:px-10">
+                            <div className="absolute text-4xl font-serif italic bottom-px left-1/2 -translate-x-1/2  font-black text-center text-black border-4 border-black rounded-full p-3">BEFORE</div>
+                            <img className="w-full sm:w-1/2 " src={chosenJob.before} alt="before" />
                         </div>
                         
-                        <div className="w-full flex justify-end relative p-4">
-                            <div className="absolute text-4xl italic bottom-px left-1/2 -translate-x-1/2 font-bold text-center text-white border-4  border-white rounded-full p-3">AFTER</div>
-                            <img className=" w-1/2 object-cover " src={chosenJob.after} alt="after" />
+                        <div className="w-full flex justify-end relative p-2 sm:px-10">
+                            <div className="absolute text-4xl font-serif italic bottom-px left-1/2 -translate-x-1/2 font-black text-center text-black border-4  border-black rounded-full p-3">AFTER</div>
+                            <img className="w-full sm:w-1/2 object-cover " src={chosenJob.after} alt="after" />
                         </div>
                     </div>
                 
