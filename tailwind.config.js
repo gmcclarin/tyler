@@ -13,7 +13,8 @@ module.exports = {
         "olive": "#B6C4B6",
         "darker" : "#1e3118",
         "dark" : "#578E44",
-        "baseColor" : "#EEF0E5",
+        // "baseColor" : "#EEF0E5",
+        "baseColor":"#e7e1da",
         "accent" :"#cc6600",
         "logoBg" : "#558c44",
         "logoTree" : "#c2e3b6"

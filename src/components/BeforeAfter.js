@@ -116,48 +116,63 @@ const BeforeAfter = () => {
   };
 
   return (
-    <div className="w-screen h-1/2 sm:h-[90vh] md:flex justify-between items-start bg-baseColor  text-black relative">
-      <div className="w-full h-full m-auto">
-        <div className="w-full h-1/2 my-4 flex">
-          <div className="w-full h-full">
-            <div className="w-full h-full relative flex py-5 sm:px-10">
-              <div
-                onClick={handleDown}
-                className="sm:pr-5 text-4xl sm:text-6xl cursor-pointer "
-              >
-                «
-              </div>
-              <div className="absolute text-4xl font-serif italic bottom-px left-1/2 -translate-x-1/2  font-black text-center text-black border-4 border-black rounded-full p-3">
-                BEFORE
-              </div>
-              <img
-                className="w-full sm:w-1/2 object-contain"
+    // <div className="w-screen sm:h-[1/2vh] md:flex justify-between items-start bg-baseColor  text-black relative">
+    //   <div className="w-full h-full m-auto">
+    //     <div className="w-full h-1/2 my-4 flex">
+    //       <div className="w-full md:flex h-full">
+    //         <div className="md:w-1/2 w-full h-full relative flex p-5">
+
+    //           <div className="absolute text-4xl font-serif italic bottom-px left-1/2 -translate-x-1/2  font-black text-center text-black border-4 border-black rounded-full p-3">
+    //             <div
+    //             onClick={handleDown}
+    //             className="sm:pr-5 text-4xl sm:text-6xl cursor-pointer "
+    //           >
+    //             «
+    //           </div> BEFORE
+    //           </div>
+    //           <img
+    //             className="w-full object-contain"
+    //             src={chosenJob.before}
+    //             alt="before"
+    //           />
+    //         </div>
+
+    //         <div className="md:w-1/2 w-full h-full flex justify-end relative p-5">
+    //           <div className="absolute text-4xl font-serif italic bottom-px left-1/2 -translate-x-1/2 font-black text-center text-black border-4  border-black rounded-full p-3">
+    //             AFTER
+    //           </div>
+    //           <img
+    //             className="w-full object-contain"
+    //             src={chosenJob.after}
+    //             alt="after"
+    //           />
+    //           <div
+    //             onClick={handleUp}
+    //             className="sm:pl-5 text-4xl sm:text-6xl cursor-pointer"
+    //           >
+    //             »
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    <div className="grid grid-cols-2 gap-4">
+      {/* before */}
+      <div>
+      <img
+                className="w-full object-contain"
                 src={chosenJob.before}
                 alt="before"
               />
-            </div>
-
-            <div className="w-full h-full flex justify-end relative py-5 sm:px-10">
-              <div className="absolute text-4xl font-serif italic bottom-px left-1/2 -translate-x-1/2 font-black text-center text-black border-4  border-black rounded-full p-3">
-                AFTER
-              </div>
-              <img
-                className="w-full sm:w-1/2 object-contain"
-                src={chosenJob.after}
-                alt="after"
-              />
-              <div
-            onClick={handleUp}
-            className="sm:pl-5 text-4xl sm:text-6xl cursor-pointer"
-          >
-            »
-          </div>
-            </div>
-          </div>
-
-          
-        </div>
       </div>
+
+      {/* after */}
+      <div><img
+          className="w-full object-contain"
+          src={chosenJob.after}
+          alt="after"
+        /></div>
     </div>
   );
 };

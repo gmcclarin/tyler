@@ -2,9 +2,6 @@ import { useState } from 'react';
 
 
 const ReviewCarousel = () => {
-
-   
-
     const reviews = [
         {
             id : 1,
