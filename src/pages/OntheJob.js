@@ -2,6 +2,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import p01 from "../photos/01.jpeg"
 import MobileNav from "../components/MobileNav";
+import BeforeAfter from "../components/BeforeAfter";
 
 
 const OntheJob = () => {
@@ -12,85 +13,11 @@ const OntheJob = () => {
         <div>
             <MobileNav />
             <Nav />
-            
-            {/* GALLERY HERE - MASON???? */}
-            <div className="p-1 sm:p-2 pt-10 min-h-screen">
-                {/* <div className="mt-20 mx-10 flex items-center justify-between">
-                    <div className="w-1/2">Welcome to The Gallery! </div>
-                    <div className="w-1/2">on the job </div>
-                </div> */}
-            <div className="flex">
-                
-                    <div className="container mx-auto px-2 py-2 lg:px-5 lg:pt-10 mt-10">
-                        <div className="-m-1 flex flex-wrap md:-m-2">
-                            <div className="flex sm:w-1/2 flex-wrap">
-                            <div className="w-1/2 p-1 md:p-4">
-                                <img
-                                alt="gallery"
-                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
-                                src="https://i.postimg.cc/7Lm6S1cR/IMG-0049.avif" />
-                            </div>
-                            <div className="w-1/2 p-1 md:p-4">
-                                <img
-                                alt="gallery"
-                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
-                                src="https://i.postimg.cc/59vJVqgM/IMG-0529.avif" />
-                            </div>
-                            <div className="w-full p-1 md:p-4">
-                                <img
-                                alt="gallery"
-                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
-                                src="https://i.postimg.cc/mrwc8Wc8/IMG-1004-preview.avif"
-                                />
-                            </div>
-                            <div className="w-full p-1 md:p-4">
-                                <img
-                                alt="gallery"
-                                className="hover:scale-105 duration-300 block h-full w-full object-contain object-center"
-                                src={p01}
-                                />
-                            </div>
-                            </div>
-                            <div className="flex sm:w-1/2 flex-wrap">
-                            <div className="w-full p-1 md:p-4">
-                                <img
-                                alt="gallery"
-                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
-                                src="https://i.postimg.cc/pVgD9xKF/IMG-0428.avif"
-                                />
-                            </div>
-                            <div className="w-1/2 p-1 md:p-4">
-                                <img
-                                alt="gallery"
-                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
-                                src="https://i.postimg.cc/4xXHt3ym/IMG-1007.avif" />
-                            </div>
-                            <div className="w-1/2 p-1 md:p-4">
-                                <img
-                                alt="gallery"
-                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
-                                src="https://i.postimg.cc/nzNQQY9J/IMG-1008.avif" />
-                            </div>
-                            <div className="w-1/2 p-1 md:p-4">
-                                <img
-                                alt="gallery"
-                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-left"
-                                src="https://i.postimg.cc/HnGVLYFW/IMG-1016.avif" />
-                            </div>
-                            <div className="w-1/2 p-1 md:p-4">
-                                <img
-                                alt="gallery"
-                                className="hover:scale-105 duration-300 block h-full w-full object-cover object-center"
-                                src="https://i.postimg.cc/VNpN7sf9/IMG-1015.avif" />
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        
-                </div>
-                
-        </div>
-
+            <div className="sm:mt-36 mt-10 sm:m-20 sm:p-2 min-h-screen">
+                <div className="font-serif font-bold w-3/4 sm:w-1/3 p-4 text-lg">[BEFORE] and [AFTER] shots of work done in the community by Tyler's Tree Service </div>
+                <div></div>
+                <BeforeAfter/>
+            </div>
             <Footer />
         </div>
     )

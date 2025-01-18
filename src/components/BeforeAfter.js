@@ -2,71 +2,8 @@ import { useState } from "react";
 
 const BeforeAfter = () => {
   const jobs = [
-    {
-      id: 1,
-      before: "https://i.postimg.cc/9Xxdr3K9/IMG-1007.avif",
-      after: "https://i.postimg.cc/yNqXsF5r/IMG-1014.avif",
-      descr: "TRIMMING",
-      style: "",
-    },
-    {
-      id: 2,
-      before: "https://i.postimg.cc/vBYnZXvX/IMG-1004.avif",
-      after: "https://i.postimg.cc/wjNLf1v5/IMG-1013.avif",
-      descr: "TRIMMING",
-    },
-    {
-      id: 3,
-      before: "https://i.postimg.cc/WbFkzdMR/IMG-0997.avif",
-      after: "https://i.postimg.cc/nLksgBtm/IMG-0982.avif",
-      descr: "TRIMMING",
-    },
 
-    {
-      id: 4,
-      before:
-        "https://i.postimg.cc/CK1BydM6/DD7-E826-E-7-CC6-4-AB2-87-A0-24-A58-BCC014-A.avif",
-      after: "https://i.postimg.cc/13yVHJkS/IMG-0861.avif",
-      descr: "TRIMMING",
-    },
-    {
-      id: 5,
-      before: "https://i.postimg.cc/63ZQwvkz/IMG-0052.avif",
-      after: "https://i.postimg.cc/k5B41Zw0/IMG-0889.avif",
-      descr: "TRIMMING",
-    },
-
-    {
-      id: 6,
-      before: "https://i.postimg.cc/kXTq0sVq/Full-Size-Render.avif",
-      after:
-        "https://i.postimg.cc/fRFZLbjP/71443205496-2430-C01-C-3-E73-40-CD-9983-DE16-E9-C91-B2-D.avif",
-      descr: "TRIMMING",
-    },
-    {
-      id: 7,
-      before: "https://i.postimg.cc/Kv8yDT0V/IMG-8695.avif",
-      after: "https://i.postimg.cc/Kz7yJDSX/IMG-0338.avif",
-      descr: "TRIMMING",
-    },
-    {
-      id: 8,
-      before: "https://i.postimg.cc/R0KrZL03/IMG-0428.avif",
-      after: "https://i.postimg.cc/P5BsHRds/IMG-0432.avif",
-      descr: "TRIMMING",
-    },
-    {
-      id: 9,
-      before: "https://i.postimg.cc/90fNZdcY/IMG-0436.avif",
-      after: "https://i.postimg.cc/Pf67hRM3/IMG-1439.avif",
-      descr: "TRIMMING",
-    },
-    {
-      id: 10,
-      before: "https://i.postimg.cc/sDq0GGq5/IMG-4348.avif",
-      after: "https://i.postimg.cc/wBdf086v/IMG-4349.avif",
-      descr: "TRIMMING",
-    },
+ 
     {
       id: 11,
       before: "https://i.postimg.cc/MH4tBgPz/IMG-4351.avif",
@@ -105,74 +42,150 @@ const BeforeAfter = () => {
     },
   ];
 
-  const [chosenJob, setChosenJob] = useState(jobs[0]);
-
-  const handleDown = () => {
-    setChosenJob(jobs[(chosenJob.id - 2 + jobs.length) % jobs.length]);
-  };
-
-  const handleUp = () => {
-    setChosenJob(jobs[chosenJob.id % jobs.length]);
-  };
-
   return (
-    // <div className="w-screen sm:h-[1/2vh] md:flex justify-between items-start bg-baseColor  text-black relative">
-    //   <div className="w-full h-full m-auto">
-    //     <div className="w-full h-1/2 my-4 flex">
-    //       <div className="w-full md:flex h-full">
-    //         <div className="md:w-1/2 w-full h-full relative flex p-5">
-
-    //           <div className="absolute text-4xl font-serif italic bottom-px left-1/2 -translate-x-1/2  font-black text-center text-black border-4 border-black rounded-full p-3">
-    //             <div
-    //             onClick={handleDown}
-    //             className="sm:pr-5 text-4xl sm:text-6xl cursor-pointer "
-    //           >
-    //             «
-    //           </div> BEFORE
-    //           </div>
-    //           <img
-    //             className="w-full object-contain"
-    //             src={chosenJob.before}
-    //             alt="before"
-    //           />
-    //         </div>
-
-    //         <div className="md:w-1/2 w-full h-full flex justify-end relative p-5">
-    //           <div className="absolute text-4xl font-serif italic bottom-px left-1/2 -translate-x-1/2 font-black text-center text-black border-4  border-black rounded-full p-3">
-    //             AFTER
-    //           </div>
-    //           <img
-    //             className="w-full object-contain"
-    //             src={chosenJob.after}
-    //             alt="after"
-    //           />
-    //           <div
-    //             onClick={handleUp}
-    //             className="sm:pl-5 text-4xl sm:text-6xl cursor-pointer"
-    //           >
-    //             »
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-1 sm:gap-4">
       {/* before */}
       <div>
-      <img
-                className="w-full object-contain"
-                src={chosenJob.before}
-                alt="before"
-              />
-      </div>
-
-      {/* after */}
-      <div><img
-          className="w-full object-contain"
-          src={chosenJob.after}
-          alt="after"
+        {/* 1 */}
+        <div>
+        <img
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/9Xxdr3K9/IMG-1007.avif"
+          alt="before1"
+        />
+        </div>
+        {/* 2 */}
+        <div>
+        <img 
+        className="w-full object-contain p-2 sm:p-4"
+        src="https://i.postimg.cc/vBYnZXvX/IMG-1004.avif"
+        alt="before2"
         /></div>
+        {/* 3 */}
+        <div>
+          <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/qqW1bXyh/IMG-0997.avif"
+          alt="before"
+          />
+        </div>
+        {/* 4 */}
+        <div>
+          <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/CK1BydM6/DD7-E826-E-7-CC6-4-AB2-87-A0-24-A58-BCC014-A.avif"
+          alt="before"
+          />
+        </div>
+        {/* 5 */}
+        <div>
+          <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/63ZQwvkz/IMG-0052.avif"
+          alt="before"
+          />
+        </div>
+        {/* 6 */}
+        <div>
+          <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/kXTq0sVq/Full-Size-Render.avif"
+          alt="before"
+          />
+        </div>
+        {/* 7 */}
+        <div>
+          <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/Kv8yDT0V/IMG-8695.avif"
+          alt="before"
+          />
+        </div>
+        {/* 8 */}
+        <div>
+          <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/633zB1h4/IMG-0428.avif"
+          alt="before"
+          />
+        </div>
+        {/* 9 */}
+       
+
+     
+        </div>
+      {/* after */}
+      <div>
+        {/* 1 */}
+        <img
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/yNqXsF5r/IMG-1014.avif"
+          alt="after"
+        />
+        {/* 2 */}
+        <img 
+        className="w-full object-contain p-2 sm:p-4"
+        src="https://i.postimg.cc/wjNLf1v5/IMG-1013.avif"
+        alt="after2"
+        />
+        {/* 3 */}
+        <div>
+        <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/nLksgBtm/IMG-0982.avif"
+          alt="after"
+          />
+          </div>
+          {/* 4 */}
+          <div>
+        <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/13yVHJkS/IMG-0861.avif"
+          alt="after"
+          />
+          </div>
+          {/* 5 */}
+          <div>
+        <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/k5B41Zw0/IMG-0889.avif"
+          alt="after"
+          />
+          </div>
+          {/* 6 */}
+          <div>
+        <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/fRFZLbjP/71443205496-2430-C01-C-3-E73-40-CD-9983-DE16-E9-C91-B2-D.avif"
+          alt="after"
+          />
+          </div>
+          {/* 7 */}
+          <div>
+        <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/pT6CrY0G/IMG-0338.avif"
+          alt="after"
+          />
+          </div>
+          {/* 8 */}
+          <div>
+        <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/P5BsHRds/IMG-0432.avif"
+          alt="after"
+          />
+          </div>
+          {/* 9 */}
+          <div>
+        <img 
+          className="w-full object-contain p-2 sm:p-4"
+          src="https://i.postimg.cc/Pf67hRM3/IMG-1439.avif"
+          alt="after"
+          />
+          </div>
+       
+      </div>
     </div>
   );
 };

@@ -6,7 +6,6 @@ import ReviewCarousel from "../components/ReviewCarousel";
 import pic1 from "../photos/mission3.webp";
 import mainPhoto from "../photos/mainPhoto2.jpg";
 import ServicesMarquee from "../components/ServicesMarquee";
-// import BeforeAfter from "../components/BeforeAfter";
 import MobileNav from "../components/MobileNav";
 
 const Home = () => {
