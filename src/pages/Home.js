@@ -41,17 +41,17 @@ const Home = () => {
           </div>
         </div>
       </div>
-    {/* mission statement */}
+      {/* mission statement */}
       <div className="relative w-full h-screen bg-baseColor flex">
         {/* Background Text Container */}
         <div className="w-full flex items-center justify-start font-serif font-black">
           {/* Centered Mission Text */}
-          
+
           <div className="absolute z-10 text-black sm:p-20 w-3/4">
             <Reveal>
-            <strong className="text-2xl sm:text-3xl font-bold">
-              MY MISSION
-            </strong>
+              <strong className="text-2xl sm:text-3xl font-bold">
+                MY MISSION
+              </strong>
             </Reveal>
             <p className="mt-4 text-sm sm:text-lg">
               is to use my skills and knowledge to help decide which top-quality
@@ -60,9 +60,8 @@ const Home = () => {
               my customer's tree care solutions.
             </p>
           </div>
-        
         </div>
-    
+
         {/* Right Side Image */}
         <div className="w-1/2 h-[85vh] absolute right-0 bottom-0">
           <img
