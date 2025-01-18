@@ -27,11 +27,6 @@ const SignupSchema = Yup.object().shape({
   const templateId = process.env.REACT_APP_TEMPLATE_ID;
   const pubKey = process.env.REACT_APP_PUBLIC_KEY;
 
-  console.log(serviceId)
-
-//   this is undefined....
-//   console.log(pubKey)
-
 const Contact = () => {
 
     const form = useRef();
@@ -46,17 +41,17 @@ const Contact = () => {
                 const templateParams = {
                     from_first: values.firstName,
                     from_last: values.lastName,
-                    phone: values.phoneNumber,
-                    email: values.fromEmail,
-                    message : values.message1
+                    phoneNumber: values.phoneNumber,
+                    fromEmail: values.fromEmail,
+                    message: values.message1
                   };
 
-                // emailjs.send(serviceId, templateId, templateParams, pubKey)
-                //     .then((response) => {
-                //         console.log("Email sent Successfully:", response)
-                //  }).catch((error) => {
-                //     console.error("Error sending email:", error)
-                //  })
+                emailjs.send(serviceId, templateId, templateParams, pubKey)
+                    .then((response) => {
+                        console.log("Email sent Successfully:", response)
+                 }).catch((error) => {
+                    console.error("Error sending email:", error)
+                 })
 
 
                 setTimeout(() => {
