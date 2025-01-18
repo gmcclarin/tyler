@@ -7,8 +7,10 @@ const ServicesPage = () => {
     <div className="overflow-x-hidden">
       <MobileNav />
       <Nav />
-
-      <div className="px-10 p-8  grid sm:grid-cols-2 lg:grid-cols-3 gap-8  bg-base text-darker">
+      <div className="mt-20 mb-10 font-bold text-center italic text-lg sm:text-xl m-auto">
+        Prices vary depending on size and traveling distance
+      </div>
+      <div className="px-10  grid sm:grid-cols-2 lg:grid-cols-3 gap-8  bg-base text-darker">
         <div className="grid grid-rows-2 ">
           <div className="text-4xl font-bold self-end pb-4">TRIMMING</div>
           <div className="text-xl">
@@ -21,7 +23,16 @@ const ServicesPage = () => {
           </div>
           <div className="my-10">
             <p>_______________________________</p>
-            STARTING AT $119
+          
+          </div>
+        </div>
+        <div className="grid grid-rows-2 ">
+          <div className="text-4xl font-bold self-end pb-4">TREE TRAINING</div>
+          <div className="text-xl">
+            Tree Training is a way to direct your tree into a specific shape as it grows, using selective pruning techniques and limb positioning to achieve the desired result. Particularly useful for training young trees allowing them to grow to their full potential. 
+          </div>
+          <div className="my-10">
+            <p>_______________________________</p>
           </div>
         </div>
         <div className="grid grid-rows-2">
@@ -35,7 +46,6 @@ const ServicesPage = () => {
           </div>
           <div className="my-10">
             <p>_______________________________</p>
-            STARTING AT $249
           </div>
         </div>
 
@@ -51,7 +61,6 @@ const ServicesPage = () => {
           </div>
           <div className="my-10">
             <p>_______________________________</p>
-            STARTING AT $59
           </div>
         </div>
 
@@ -65,7 +74,6 @@ const ServicesPage = () => {
           </div>
           <div className="my-10">
             <p>_______________________________</p>
-            STARTING AT $299
           </div>
         </div>
 
@@ -80,7 +88,6 @@ const ServicesPage = () => {
           </div>
           <div className="my-10">
             <p>_______________________________</p>
-            STARTING AT $299
           </div>
         </div>
 
@@ -95,7 +102,6 @@ const ServicesPage = () => {
           </div>
           <div className="my-10">
             <p>_______________________________</p>
-            STARTING AT $299
           </div>
         </div>
 
@@ -110,7 +116,6 @@ const ServicesPage = () => {
           </div>
           <div className="my-10">
             <p>_______________________________</p>
-            PRICES VARY
           </div>
         </div>
       </div>
