@@ -47,7 +47,7 @@ const Home = () => {
         <div className="w-full flex items-center justify-start font-serif font-black">
           {/* Centered Mission Text */}
 
-          <div className="absolute z-10 text-black sm:p-20 w-3/4">
+          <div className="absolute top-1/2 sm:top-1/2 z-10 text-black p-5 sm:p-20 w-3/4">
             <Reveal>
               <strong className="text-2xl sm:text-3xl font-bold">
                 MY MISSION
