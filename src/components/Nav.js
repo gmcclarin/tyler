@@ -1,4 +1,4 @@
-import tree2 from "../photos/treeLogo2.png";
+// import tree2 from "../photos/treeLogo2.png";
 
 const Nav = () => {
   return (

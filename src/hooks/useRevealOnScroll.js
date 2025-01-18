@@ -12,17 +12,22 @@ const useRevealOnScroll = (options) => {
     useEffect(() => {
 
         const scrollObserver = new IntersectionObserver(callbackFunction, options);
-        if(ref.current) {
-            scrollObserver.observe(ref.current)
+        const currentElement = ref.current;
+
+
+        if(currentElement) {
+            scrollObserver.observe(currentElement)
             
         }
 
         return () => {
-                scrollObserver.unobserve(ref.current)
-                scrollObserver.disconnect();
+            if (currentElement) {
+                scrollObserver.unobserve(currentElement)
+            }
+            scrollObserver.disconnect();
         }
 
-    },[])
+    },[options])
 
     return [ref, isVisible]
 

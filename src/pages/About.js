@@ -1,7 +1,6 @@
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import MobileNav from "../components/MobileNav";
-import Contact from "../components/Contact";
 
 const About  = () => {
     return (

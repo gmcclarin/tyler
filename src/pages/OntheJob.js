@@ -1,6 +1,5 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import p01 from "../photos/01.jpeg"
 import MobileNav from "../components/MobileNav";
 import BeforeAfter from "../components/BeforeAfter";
 
