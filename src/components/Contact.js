@@ -11,6 +11,8 @@ const initialValues = {
   message1: "",
 };
 
+// console.log(process.env.REACT_APP_PUBLIC_KEY); 
+
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string().required("Required"),
   lastName: Yup.string().required("Required"),
@@ -40,6 +42,7 @@ const Contact = () => {
             fromEmail: values.fromEmail,
             message: values.message1,
           };
+          console.log(pubKey);
 
           emailjs
             .send(serviceId, templateId, templateParams, pubKey)

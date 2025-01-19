@@ -8,7 +8,7 @@ const ServicesPage = () => {
       <MobileNav />
       <Nav />
       <div className="mt-20 mb-10 font-bold text-center italic text-lg sm:text-xl m-auto">
-        Prices vary depending on size and traveling distance
+        <p className="bg-orange-200 inline-block px-2 py-1 rounded-md">Prices vary depending on size and traveling distance</p>
       </div>
       <div className="px-10  grid sm:grid-cols-2 lg:grid-cols-3 gap-8  bg-base text-darker">
         <div className="grid grid-rows-2 ">
@@ -120,9 +120,12 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      <div className="mb-10 font-bold text-center italic text-lg sm:text-xl m-auto">
-        Prices vary depending on size and traveling distance
-      </div>
+      <div className="mb-10 font-bold text-center italic text-lg sm:text-xl">
+  <p className="bg-orange-200 inline-block px-2 py-1 rounded-md">
+    Prices vary depending on size and traveling distance
+  </p>
+</div>
+
 
       {/* <div><button>READY TO CHAT?</button></div> */}
 
