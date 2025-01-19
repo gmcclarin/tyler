@@ -44,7 +44,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a href="https//:" className="p-1 hover:text-dark">
+          <a href="https://www.facebook.com/profile.php?id=61572401724627" className="p-1 hover:text-dark">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a href="tel:585-802-9632" className="p-1 hover:text-dark">
