@@ -42,7 +42,6 @@ const Contact = () => {
             fromEmail: values.fromEmail,
             message: values.message1,
           };
-          console.log(pubKey);
 
           emailjs
             .send(serviceId, templateId, templateParams, pubKey)
