@@ -10,7 +10,7 @@ const About = () => {
       <div className="w-screen ">
         <div className="lg:mx-20 mt-20 p-10 flex ">
           {/* <div className="hidden md:flex font-black text-8xl -rotate-90 transform md:translate-x-1/2 lg:translate-x-1/4">ABOUT</div> */}
-          <div className="sm:flex w-full justify-between text-md md:text-lg">
+          <div className="sm:flex w-full justify-between text-md md:text-xl">
             <p className="sm:w-1/2 p-5">
               <strong>Based in Upstate NY</strong>, Tyler has always had a
               passion for the outdoors. Ever since Tyler was a child, he has
