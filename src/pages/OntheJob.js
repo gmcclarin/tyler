@@ -2,10 +2,12 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import MobileNav from "../components/MobileNav";
 import BeforeAfter from "../components/BeforeAfter";
+import ConstructionOverlay from "../components/ConstructionOverlay";
 
 const OntheJob = () => {
   return (
     <div>
+      <ConstructionOverlay />
       <MobileNav />
       <Nav />
       <div className="sm:mt-36 mt-10 sm:m-20 sm:p-2 min-h-screen">
