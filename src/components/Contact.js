@@ -1,6 +1,6 @@
 import { Formik } from "formik";
 import * as Yup from "yup";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const initialValues = {
@@ -10,8 +10,6 @@ const initialValues = {
   fromEmail: "",
   message1: "",
 };
-
-// console.log(process.env.REACT_APP_PUBLIC_KEY); 
 
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string().required("Required"),

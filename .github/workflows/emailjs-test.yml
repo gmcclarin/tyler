@@ -1,0 +1,31 @@
+name: Monthly EmailJS Test
+
+on:
+  schedule:
+    - cron: '0 12 1 * *' # Runs at 12:00 UTC on the 1st of each month
+  workflow_dispatch: # lets you trigger manually from the GitHub UI
+
+jobs:
+  send-test-email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test email via EmailJS
+        env:
+          SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
+          TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
+          PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
+        run: |
+          curl -X POST https://api.emailjs.com/api/v1.0/email/send \
+          -H "Content-Type: application/json" \
+          -d '{
+            "service_id": "'"$SERVICE_ID"'",
+            "template_id": "'"$TEMPLATE_ID"'",
+            "user_id": "'"$PUBLIC_KEY"'",
+            "template_params": {
+              "from_first": "Auto",
+              "from_last": "Test",
+              "phoneNumber": "555-555-5555",
+              "fromEmail": "auto@tester.com",
+              "message": "This is a monthly scheduled EmailJS test from GitHub Actions written by G.M."
+            }
+          }'
