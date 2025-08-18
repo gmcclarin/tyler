@@ -1,7 +1,8 @@
 import { Formik } from "formik";
 import * as Yup from "yup";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Alert from "./Alert";
 
 const initialValues = {
   firstName: "",
@@ -26,6 +27,11 @@ const pubKey = process.env.REACT_APP_PUBLIC_KEY;
 
 const Contact = () => {
   const form = useRef();
+  const [alert, setAlert] = useState({ show: false, message: "", color: "" });
+
+  const handleClose = () => {
+    setAlert({ ...alert, show: false });
+  };
 
   return (
     <div id="contact" className="m-5 sm:m-0 text-black">
@@ -44,15 +50,27 @@ const Contact = () => {
           emailjs
             .send(serviceId, templateId, templateParams, pubKey)
             .then((response) => {
+              setAlert({
+                show: true,
+                message: "Your message has been sent to Tyler",
+                color: "green",
+              });
               console.log("Email sent Successfully:", response);
+              setTimeout(() => {
+                setAlert({ show: false, message: "", color: "" });
+              }, 5000);
             })
             .catch((error) => {
+              setAlert({
+                showAlert: true,
+                message: "There was an issue sending your message to Tyler",
+                color: "red",
+              });
               console.error("Error sending email:", error);
+              setTimeout(() => {
+                setAlert({ show: false, message: "", color: "" });
+              }, 5000);
             });
-
-          setTimeout(() => {
-            alert("Your was Inquiry sent to Tyler!");
-          }, 400);
 
           resetForm({ values: initialValues });
         }}
@@ -167,6 +185,15 @@ const Contact = () => {
           </form>
         )}
       </Formik>
+      {alert.show && (
+        <div className="fixed bottom-6 right-4 z-50">
+          <Alert
+            color={alert.color}
+            message={alert.message}
+            handleClose={handleClose}
+          />
+        </div>
+      )}
     </div>
   );
 };
