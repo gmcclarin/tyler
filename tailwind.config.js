@@ -3,6 +3,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  safelist: [
+    { pattern: /(bg|text|border)-(red|green|yellow|blue)-(200|500|700|900)/ },
+  ],
   theme: {
     extend: {
       backgroundImage : {
