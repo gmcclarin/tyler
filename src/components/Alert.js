@@ -1,11 +1,11 @@
-export default function Alert({color, message}) {
+export default function Alert({color, message, handleClose}) {
   return (
     <div
-      className={`bg-${color}-100 border-4 border-${color}-900 text-${color}-700 px-4 py-3 rounded relative`}
+      className={`bg-${color}-200 shadow-xl text-${color}-700 px-4 py-3 m-3 rounded-lg relative`}
       role="alert"
     >
       <strong className="font-bold">{message}</strong>
-      <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+      <span className="absolute top-0 bottom-0 right-0 px-4 py-3" onClick={handleClose}>
         <svg
           className={`fill-current h-6 w-6 text-${color}-500`}
           role="button"
